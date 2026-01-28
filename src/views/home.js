@@ -57,6 +57,15 @@ export function HomeView(container, state) {
             </div>
         </div>
     `;
+
+    // Kiki greeting - only on first visit per session
+    if (!sessionStorage.getItem('kiki_greeted') && window.kiki) {
+        setTimeout(() => {
+            window.kiki.setEmotion('happy');
+            window.kiki.speak('Hallo! Ich bin Kiki, dein Roboter-Freund. Klick auf eine Lektion, um loszulegen!');
+            sessionStorage.setItem('kiki_greeted', 'true');
+        }, 500);
+    }
 }
 
 export default HomeView;

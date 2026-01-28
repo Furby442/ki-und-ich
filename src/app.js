@@ -9,6 +9,7 @@ import { StateManager } from './services/state.js';
 import { HomeView } from './views/home.js';
 import { LessonView } from './views/lesson.js';
 import { QuizView } from './views/quiz.js';
+import { kikiInstance } from './components/kiki/kiki.js';
 
 // Initialize state manager
 const state = new StateManager();
@@ -42,6 +43,10 @@ function notFoundView(container, params) {
 
 // Initialize router
 const router = new Router(routes);
+
+// Initialize Kiki mascot
+kikiInstance.init();
+window.kiki = kikiInstance;
 
 // Global error handler
 window.addEventListener('error', (event) => {

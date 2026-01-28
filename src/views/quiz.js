@@ -61,6 +61,34 @@ export function QuizView(container, state, params) {
 
         ${navigationHtml}
     `;
+
+    // Set Kiki to curious (waiting for answers)
+    if (window.kiki) {
+        window.kiki.setEmotion('curious');
+    }
+}
+
+/**
+ * Call when user answers a quiz question
+ * Hook for Phase 4 quiz system integration
+ * @param {boolean} correct - Whether the answer was correct
+ */
+export function answerQuestion(correct) {
+    if (window.kiki) {
+        window.kiki.reactToAnswer(correct);
+    }
+}
+
+/**
+ * Call when quiz is completed
+ * Hook for Phase 4 quiz system integration
+ * @param {number} score - Number of correct answers
+ * @param {number} total - Total number of questions
+ */
+export function completeQuiz(score, total) {
+    if (window.kiki) {
+        window.kiki.reactToQuizEnd(score, total);
+    }
 }
 
 export default QuizView;

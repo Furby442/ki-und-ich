@@ -61,6 +61,27 @@ export function LessonView(container, state, params) {
 
         ${navigationHtml}
     `;
+
+    // Set Kiki emotion based on lesson
+    if (window.kiki) {
+        // Lesson 1: curious (introduction)
+        // Lesson 7: proud (final lesson)
+        // Others: happy (standard learning)
+        const emotion = lessonId === 1 ? 'curious' : lessonId === 7 ? 'proud' : 'happy';
+        window.kiki.setEmotion(emotion);
+
+        // Brief message on first visit to this lesson (per session)
+        const sessionKey = `kiki_lesson_${lessonId}_visited`;
+        if (!sessionStorage.getItem(sessionKey)) {
+            setTimeout(() => {
+                const message = lessonId === 1
+                    ? 'Lektion 1 - das wird spannend!'
+                    : `Weiter geht's mit Lektion ${lessonId}!`;
+                window.kiki.speak(message, { duration: 3000 });
+                sessionStorage.setItem(sessionKey, 'true');
+            }, 300);
+        }
+    }
 }
 
 export default LessonView;

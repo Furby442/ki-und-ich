@@ -1,0 +1,505 @@
+/* ========================================
+   KIKI MASCOT - CSS Variables & Animations
+   ======================================== */
+
+:root {
+    /* Kiki color palette - purple/violet theme */
+    --kiki-primary: #8B5CF6;
+    --kiki-secondary: #A78BFA;
+    --kiki-accent: #F59E0B;
+    --kiki-screen: #22D3EE;
+    --kiki-screen-dim: #155E75;
+
+    /* Animation timing */
+    --kiki-timing-slow: 0.8s;
+    --kiki-timing-normal: 0.4s;
+    --kiki-timing-fast: 0.2s;
+    --kiki-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+.kiki-container {
+    position: fixed;
+    bottom: 80px;
+    left: 16px;
+    z-index: 900;
+    pointer-events: none;
+}
+
+.kiki-avatar {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Smooth transitions for all emotion changes */
+.kiki-avatar * {
+    transition:
+        transform var(--kiki-timing-slow) var(--kiki-easing),
+        fill var(--kiki-timing-normal) var(--kiki-easing),
+        opacity var(--kiki-timing-normal) var(--kiki-easing);
+}
+
+.kiki-mouth {
+    transition:
+        d var(--kiki-timing-slow) var(--kiki-easing),
+        stroke var(--kiki-timing-normal) var(--kiki-easing);
+}
+
+/* ========================================
+   IDLE ANIMATIONS
+   ======================================== */
+
+@keyframes kiki-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes kiki-antenna-sway {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes kiki-blink {
+    0%, 92%, 100% {
+        transform: scaleY(1);
+    }
+    95% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes kiki-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 2px var(--kiki-accent));
+    }
+    50% {
+        filter: drop-shadow(0 0 8px var(--kiki-accent));
+    }
+}
+
+/* Apply idle animations */
+.kiki-root {
+    animation: kiki-float 3s ease-in-out infinite;
+}
+
+.kiki-antenna {
+    transform-origin: 75px 15px;
+    animation: kiki-antenna-sway 4s ease-in-out infinite;
+}
+
+.kiki-eye {
+    transform-origin: center center;
+    animation: kiki-blink 4s ease-in-out infinite;
+}
+
+.kiki-eye--right {
+    animation-delay: 0.15s;
+}
+
+.kiki-antenna-tip {
+    animation: kiki-glow 2s ease-in-out infinite;
+}
+
+/* ========================================
+   EMOTION STATES
+   ======================================== */
+
+/* Happy - default, smile */
+.kiki-avatar[data-emotion="happy"] .kiki-mouth {
+    d: path("M55 62 Q75 75 95 62");
+}
+
+.kiki-avatar[data-emotion="happy"] .kiki-eye {
+    transform: scaleY(1);
+}
+
+/* Thoughtful - raised eyebrow effect, contemplative */
+.kiki-avatar[data-emotion="thoughtful"] .kiki-eye--left {
+    transform: translateY(-3px) scaleY(0.85);
+}
+
+.kiki-avatar[data-emotion="thoughtful"] .kiki-eye--right {
+    transform: scaleY(0.9);
+}
+
+.kiki-avatar[data-emotion="thoughtful"] .kiki-mouth {
+    d: path("M60 65 Q75 62 90 65");
+}
+
+.kiki-avatar[data-emotion="thoughtful"] .kiki-antenna {
+    animation: none;
+    transform: rotate(15deg);
+}
+
+.kiki-avatar[data-emotion="thoughtful"] .kiki-head {
+    transform: rotate(-3deg);
+    transform-origin: center bottom;
+}
+
+/* Proud - big smile, puffed up */
+.kiki-avatar[data-emotion="proud"] .kiki-mouth {
+    d: path("M50 58 Q75 80 100 58");
+}
+
+.kiki-avatar[data-emotion="proud"] .kiki-eye {
+    transform: scaleY(0.7);
+    animation: none;
+}
+
+.kiki-avatar[data-emotion="proud"] .kiki-body {
+    transform: scale(1.03);
+    transform-origin: center bottom;
+}
+
+.kiki-avatar[data-emotion="proud"] .kiki-antenna {
+    animation: kiki-antenna-sway 1.5s ease-in-out infinite;
+}
+
+/* Sad - droopy, frown */
+.kiki-avatar[data-emotion="sad"] .kiki-mouth {
+    d: path("M55 72 Q75 58 95 72");
+}
+
+.kiki-avatar[data-emotion="sad"] .kiki-antenna {
+    animation: none;
+    transform: rotate(25deg);
+}
+
+.kiki-avatar[data-emotion="sad"] .kiki-eye {
+    transform: translateY(3px) scaleY(0.8);
+    animation: none;
+}
+
+.kiki-avatar[data-emotion="sad"] .kiki-root {
+    animation: kiki-float 5s ease-in-out infinite;
+}
+
+.kiki-avatar[data-emotion="sad"] .kiki-antenna-tip {
+    opacity: 0.5;
+}
+
+/* Surprised - wide eyes, O mouth */
+.kiki-avatar[data-emotion="surprised"] .kiki-eye {
+    transform: scale(1.25);
+    animation: none;
+}
+
+.kiki-avatar[data-emotion="surprised"] .kiki-mouth {
+    d: path("M65 60 Q67 72 75 72 Q83 72 85 60 Q83 52 75 52 Q67 52 65 60");
+}
+
+.kiki-avatar[data-emotion="surprised"] .kiki-antenna {
+    transform: rotate(0);
+    animation: none;
+}
+
+.kiki-avatar[data-emotion="surprised"] .kiki-antenna-tip {
+    animation: kiki-glow 0.3s ease-in-out infinite;
+}
+
+.kiki-avatar[data-emotion="surprised"] .kiki-root {
+    animation: none;
+    transform: translateY(-4px);
+}
+
+/* Curious - head tilt, one eye bigger */
+.kiki-avatar[data-emotion="curious"] .kiki-head {
+    transform: rotate(-5deg);
+    transform-origin: center bottom;
+}
+
+.kiki-avatar[data-emotion="curious"] .kiki-eye--right {
+    transform: scale(1.15);
+}
+
+.kiki-avatar[data-emotion="curious"] .kiki-eye--left {
+    transform: scale(0.9);
+}
+
+.kiki-avatar[data-emotion="curious"] .kiki-mouth {
+    d: path("M58 65 Q75 68 92 60");
+}
+
+.kiki-avatar[data-emotion="curious"] .kiki-antenna {
+    animation: kiki-antenna-sway 2s ease-in-out infinite;
+}
+
+/* ========================================
+   QUIZ REACTION ANIMATIONS
+   ======================================== */
+
+@keyframes kiki-thumbs-up {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg) translateY(-8px);
+    }
+    75% {
+        transform: rotate(10deg) translateY(-5px);
+    }
+}
+
+@keyframes kiki-wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20%, 60% {
+        transform: rotate(-15deg);
+    }
+    40%, 80% {
+        transform: rotate(15deg);
+    }
+}
+
+.kiki-avatar[data-reaction="correct"] .kiki-arm--right {
+    animation: kiki-thumbs-up 0.8s var(--kiki-easing);
+    transform-origin: 132px 95px;
+}
+
+.kiki-avatar[data-reaction="encourage"] .kiki-arm--right {
+    animation: kiki-wave 1s ease-in-out 2;
+    transform-origin: 132px 95px;
+}
+
+/* ========================================
+   SPEECH BUBBLE
+   ======================================== */
+
+.kiki-speech {
+    --speech-tail-width: 1.2em;
+    --speech-tail-height: 0.8em;
+    --speech-tail-position: 15%;
+
+    position: fixed;
+    bottom: 220px;
+    left: 100px;
+    max-width: 280px;
+    min-width: 120px;
+
+    background: white;
+    border-radius: 16px;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + var(--speech-tail-height));
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--kiki-primary);
+
+    font-size: var(--font-size-base, 16px);
+    color: var(--color-text, #3c3c3c);
+    z-index: 950;
+
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.kiki-speech::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid white;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+.kiki-speech::before {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 14px solid var(--kiki-primary);
+}
+
+.kiki-speech--visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Speech content wrapper */
+.kiki-speech-content {
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+/* Dismiss button */
+.kiki-speech-dismiss {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary, #777);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.kiki-speech-dismiss:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--color-text, #3c3c3c);
+}
+
+.kiki-speech-dismiss:focus {
+    outline: 2px solid var(--kiki-primary);
+    outline-offset: 2px;
+}
+
+/* Word-by-word animation */
+.kiki-speech-word {
+    display: inline-block;
+    opacity: 0;
+    animation: kiki-word-appear 0.3s ease-out forwards;
+}
+
+@keyframes kiki-word-appear {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   PARTICLE EFFECTS
+   ======================================== */
+
+.kiki-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 200px;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.kiki-particle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.kiki-particle--star {
+    width: 12px;
+    height: 12px;
+    background: var(--kiki-accent);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%,
+        79% 91%, 50% 70%, 21% 91%, 32% 57%,
+        2% 35%, 39% 35%
+    );
+}
+
+.kiki-particle--sparkle {
+    width: 8px;
+    height: 8px;
+    background: var(--kiki-screen);
+    border-radius: 50%;
+}
+
+@keyframes kiki-particle-burst {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(1);
+    }
+}
+
+.kiki-particle--animating {
+    animation: kiki-particle-burst 0.8s ease-out forwards;
+}
+
+/* ========================================
+   ACCESSIBILITY - REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    /* Disable all decorative animations */
+    .kiki-root,
+    .kiki-antenna,
+    .kiki-eye,
+    .kiki-eye--right,
+    .kiki-antenna-tip,
+    .kiki-arm--right,
+    .kiki-arm--left {
+        animation: none !important;
+    }
+
+    /* Keep state transitions but make them instant */
+    .kiki-avatar *,
+    .kiki-mouth {
+        transition-duration: 0.1s !important;
+    }
+
+    /* Disable speech word animation */
+    .kiki-speech-word {
+        animation: none;
+        opacity: 1;
+    }
+
+    /* Disable particles */
+    .kiki-particle {
+        display: none;
+    }
+
+    /* Keep speech bubble fade but faster */
+    .kiki-speech {
+        transition-duration: 0.1s;
+    }
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 599px) {
+    .kiki-container {
+        bottom: 70px;
+        left: 8px;
+    }
+
+    .kiki-avatar {
+        width: 100px;
+        height: 133px;
+    }
+
+    .kiki-speech {
+        left: 70px;
+        bottom: 180px;
+        max-width: 200px;
+        font-size: var(--font-size-sm, 14px);
+    }
+}
