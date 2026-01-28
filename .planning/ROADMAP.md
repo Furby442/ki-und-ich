@@ -12,7 +12,7 @@ This roadmap transforms "KI & ich" from concept to deployable web-app through 9 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Setup** - Project scaffolding, design system, routing, deployment
+- [x] **Phase 1: Foundation & Setup** - Project scaffolding, design system, routing, deployment
 - [ ] **Phase 2: Kiki Maskottchen System** - Interactive avatar with emotions and speech bubbles
 - [ ] **Phase 3: Lesson Framework** - Content rendering engine with age-appropriate display
 - [ ] **Phase 4: Quiz System** - Interactive quizzes with immediate feedback
@@ -39,9 +39,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project scaffolding, Router, and StateManager
-- [ ] 01-02-PLAN.md — Navigation components and Home/Lesson/Quiz views
-- [ ] 01-03-PLAN.md — GitHub Pages deployment and verification
+- [x] 01-01-PLAN.md — Project scaffolding, Router, and StateManager
+- [x] 01-02-PLAN.md — Navigation components and Home/Lesson/Quiz views
+- [x] 01-03-PLAN.md — GitHub Pages deployment and verification
 
 ### Phase 2: Kiki Maskottchen System
 **Goal**: Kiki becomes an engaging, emotionally responsive guide throughout the learning journey
@@ -169,7 +169,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Setup | 0/3 | Planned | - |
+| 1. Foundation & Setup | 3/3 | Complete | 2026-01-28 |
 | 2. Kiki Maskottchen System | 0/TBD | Not started | - |
 | 3. Lesson Framework | 0/TBD | Not started | - |
 | 4. Quiz System | 0/TBD | Not started | - |

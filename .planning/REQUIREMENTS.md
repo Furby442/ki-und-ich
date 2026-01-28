@@ -7,11 +7,11 @@
 
 ### Navigation & UI
 
-- [ ] **NAV-01**: User kann durch klare Navigation mit sichtbarem Weiter-Button navigieren
-- [ ] **NAV-02**: User sieht Fortschrittsanzeige auf jeder Seite (wo im Lernpfad)
-- [ ] **NAV-03**: App ist mobile-responsive (funktioniert auf Tablets)
-- [ ] **NAV-04**: User sieht Home-Übersicht mit allen Lektionen auf einen Blick
-- [ ] **NAV-05**: Touch-Targets sind mindestens 48x48px groß
+- [x] **NAV-01**: User kann durch klare Navigation mit sichtbarem Weiter-Button navigieren
+- [x] **NAV-02**: User sieht Fortschrittsanzeige auf jeder Seite (wo im Lernpfad)
+- [x] **NAV-03**: App ist mobile-responsive (funktioniert auf Tablets)
+- [x] **NAV-04**: User sieht Home-Übersicht mit allen Lektionen auf einen Blick
+- [x] **NAV-05**: Touch-Targets sind mindestens 48x48px groß
 
 ### Kiki Maskottchen
 
@@ -61,10 +61,10 @@
 
 ### Technisch
 
-- [ ] **TECH-01**: App läuft als statische Web-App (HTML, CSS, JS)
-- [ ] **TECH-02**: Kein Backend erforderlich
-- [ ] **TECH-03**: App ist auf GitHub Pages deploybar
-- [ ] **TECH-04**: App speichert keine personenbezogenen Daten (DSGVO-konform)
+- [x] **TECH-01**: App läuft als statische Web-App (HTML, CSS, JS)
+- [x] **TECH-02**: Kein Backend erforderlich
+- [x] **TECH-03**: App ist auf GitHub Pages deploybar
+- [x] **TECH-04**: App speichert keine personenbezogenen Daten (DSGVO-konform)
 
 ## v2 Requirements
 
@@ -102,15 +102,15 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 1 | Pending |
-| NAV-02 | Phase 1 | Pending |
-| NAV-03 | Phase 1 | Pending |
-| NAV-04 | Phase 1 | Pending |
-| NAV-05 | Phase 1 | Pending |
-| TECH-01 | Phase 1 | Pending |
-| TECH-02 | Phase 1 | Pending |
-| TECH-03 | Phase 1 | Pending |
-| TECH-04 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Complete |
+| NAV-02 | Phase 1 | Complete |
+| NAV-03 | Phase 1 | Complete |
+| NAV-04 | Phase 1 | Complete |
+| NAV-05 | Phase 1 | Complete |
+| TECH-01 | Phase 1 | Complete |
+| TECH-02 | Phase 1 | Complete |
+| TECH-03 | Phase 1 | Complete |
+| TECH-04 | Phase 1 | Complete |
 | KIKI-01 | Phase 2 | Pending |
 | KIKI-02 | Phase 2 | Pending |
 | KIKI-03 | Phase 2 | Pending |
