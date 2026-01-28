@@ -10,6 +10,7 @@ import { HomeView } from './views/home.js';
 import { LessonView } from './views/lesson.js';
 import { QuizView } from './views/quiz.js';
 import { MiniAppsView } from './views/mini-apps.js';
+import { TeacherView } from './views/teacher.js';
 import { kikiInstance } from './components/kiki/kiki.js';
 import { soundManager } from './services/sound.js';
 
@@ -36,6 +37,7 @@ const routes = {
     '/quiz/:id': (container, params) => QuizView(container, state, params),
     '/apps': (container, params) => MiniAppsView(container, state, params),
     '/apps/:app': (container, params) => MiniAppsView(container, state, params),
+    '/teacher': (container, params) => TeacherView(container, state),
     '/404': notFoundView
 };
 

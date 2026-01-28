@@ -1,0 +1,284 @@
+/* ========================================
+   TEACHER MODE STYLES
+   ======================================== */
+
+.teacher-page {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+    max-width: 900px;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.teacher-header {
+    margin-bottom: var(--space-xl);
+}
+
+.teacher-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.teacher-back {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+.teacher-back:hover {
+    text-decoration: underline;
+}
+
+.teacher-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--radius-full);
+}
+
+.teacher-header h1 {
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.teacher-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+}
+
+/* ========================================
+   SECTIONS
+   ======================================== */
+
+.teacher-section {
+    margin-bottom: var(--space-xl);
+}
+
+.teacher-section h2 {
+    font-size: 20px;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--color-border);
+}
+
+/* ========================================
+   LESSONS GRID
+   ======================================== */
+
+.teacher-lessons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.teacher-lesson-card {
+    background: white;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+}
+
+.teacher-lesson-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.teacher-lesson-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    flex-shrink: 0;
+}
+
+.teacher-lesson-title {
+    font-size: 18px;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.teacher-lesson-desc {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+    padding-left: calc(36px + var(--space-md));
+}
+
+.teacher-lesson-actions {
+    display: flex;
+    gap: var(--space-sm);
+    padding-left: calc(36px + var(--space-md));
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.teacher-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.teacher-btn--lesson {
+    background: var(--color-primary);
+    color: white;
+}
+
+.teacher-btn--lesson:hover {
+    background: var(--color-primary-dark);
+}
+
+.teacher-btn--quiz {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.teacher-btn--quiz:hover {
+    background: #1899d6;
+}
+
+.teacher-btn--action {
+    background: var(--color-accent);
+    color: white;
+    padding: var(--space-md) var(--space-lg);
+}
+
+.teacher-btn--action:hover {
+    background: #e08600;
+}
+
+/* ========================================
+   MINI-APPS GRID
+   ======================================== */
+
+.teacher-apps-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.teacher-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.teacher-app-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--color-background-alt);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+}
+
+.teacher-app-card:hover {
+    border-color: var(--color-secondary);
+    background: white;
+}
+
+.teacher-app-emoji {
+    font-size: 28px;
+}
+
+/* ========================================
+   TIPS
+   ======================================== */
+
+.teacher-tips {
+    background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+}
+
+.teacher-tips h2 {
+    border-bottom-color: var(--color-primary);
+}
+
+.teacher-tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teacher-tips-list li {
+    position: relative;
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    line-height: 1.5;
+}
+
+.teacher-tips-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* ========================================
+   QUICK ACTIONS
+   ======================================== */
+
+.teacher-quick-actions {
+    display: flex;
+    gap: var(--space-md);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 599px) {
+    .teacher-apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-lesson-desc,
+    .teacher-lesson-actions {
+        padding-left: 0;
+    }
+
+    .teacher-lesson-actions {
+        flex-direction: column;
+    }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .teacher-btn,
+    .teacher-app-card {
+        transition: none;
+    }
+}

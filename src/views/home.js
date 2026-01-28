@@ -76,6 +76,9 @@ export function HomeView(container, state) {
                 <a href="#/apps" class="btn btn-secondary">
                     🎮 Mini-Apps ausprobieren
                 </a>
+                <a href="#/teacher" class="btn btn-outline" style="margin-left: var(--space-md);">
+                    👩‍🏫 Lehrer-Modus
+                </a>
             </div>
         </div>
     `;
