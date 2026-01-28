@@ -102,13 +102,49 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (wird während Roadmap-Erstellung ausgefüllt) | | |
+| NAV-01 | Phase 1 | Pending |
+| NAV-02 | Phase 1 | Pending |
+| NAV-03 | Phase 1 | Pending |
+| NAV-04 | Phase 1 | Pending |
+| NAV-05 | Phase 1 | Pending |
+| TECH-01 | Phase 1 | Pending |
+| TECH-02 | Phase 1 | Pending |
+| TECH-03 | Phase 1 | Pending |
+| TECH-04 | Phase 1 | Pending |
+| KIKI-01 | Phase 2 | Pending |
+| KIKI-02 | Phase 2 | Pending |
+| KIKI-03 | Phase 2 | Pending |
+| KIKI-04 | Phase 2 | Pending |
+| KIKI-05 | Phase 2 | Pending |
+| LEKT-08 | Phase 3 | Pending |
+| LEKT-09 | Phase 3 | Pending |
+| QUIZ-01 | Phase 4 | Pending |
+| QUIZ-02 | Phase 4 | Pending |
+| QUIZ-03 | Phase 4 | Pending |
+| QUIZ-04 | Phase 4 | Pending |
+| PROG-01 | Phase 5 | Pending |
+| PROG-02 | Phase 5 | Pending |
+| PROG-03 | Phase 5 | Pending |
+| PROG-04 | Phase 5 | Pending |
+| LEKT-01 | Phase 6 | Pending |
+| LEKT-02 | Phase 6 | Pending |
+| LEKT-03 | Phase 6 | Pending |
+| LEKT-04 | Phase 6 | Pending |
+| LEKT-05 | Phase 7 | Pending |
+| LEKT-06 | Phase 7 | Pending |
+| LEKT-07 | Phase 8 | Pending |
+| MINI-01 | Phase 8 | Pending |
+| MINI-02 | Phase 8 | Pending |
+| MINI-03 | Phase 8 | Pending |
+| MINI-04 | Phase 8 | Pending |
+| LEHR-01 | Phase 9 | Pending |
+| LEHR-02 | Phase 9 | Pending |
 
 **Coverage:**
-- v1 requirements: 35 total
-- Mapped to phases: 0
-- Unmapped: 35 ⚠️
+- v1 requirements: 37 total
+- Mapped to phases: 37
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after initial definition*
+*Last updated: 2026-01-28 after roadmap creation*
