@@ -86,10 +86,12 @@ Plans:
   3. User sees final quiz score displayed as "X of 5 correct"
   4. Kiki reacts to quiz results (celebrates success, encourages after mistakes)
   5. No time pressure during quiz (child-friendly pacing)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Quiz data structure and loader
+- [ ] 04-02-PLAN.md — QuizRenderer component with question display
+- [ ] 04-03-PLAN.md — Feedback animations, results screen, view integration
 
 ### Phase 5: Progress & Rewards
 **Goal**: Progress tracking and celebrations motivate continued learning
@@ -176,7 +178,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 1. Foundation & Setup | 3/3 | Complete | 2026-01-28 |
 | 2. Kiki Maskottchen System | 3/3 | Complete | 2026-01-28 |
 | 3. Lesson Framework | 3/3 | Complete | 2026-01-28 |
-| 4. Quiz System | 0/TBD | Not started | - |
+| 4. Quiz System | 0/3 | Not started | - |
 | 5. Progress & Rewards | 0/TBD | Not started | - |
 | 6. Core Lessons 1-4 | 0/TBD | Not started | - |
 | 7. Advanced Lessons 5-6 | 0/TBD | Not started | - |
