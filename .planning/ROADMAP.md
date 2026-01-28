@@ -49,14 +49,16 @@ Plans:
 **Requirements**: KIKI-01, KIKI-02, KIKI-03, KIKI-04, KIKI-05
 **Success Criteria** (what must be TRUE):
   1. User sees Kiki as SVG avatar on every page
-  2. Kiki displays different emotions (happy, thoughtful, proud, sad) contextually
+  2. Kiki displays different emotions (happy, thoughtful, proud, sad, surprised, curious) contextually
   3. Kiki shows explanations in speech bubble format
   4. Kiki reacts with animations when user answers quiz questions (celebrates correct, encourages on wrong)
   5. User is greeted by Kiki on the home page with welcoming message
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
+- [ ] 02-01-PLAN.md — Core Kiki SVG component and emotion system
+- [ ] 02-02-PLAN.md — Speech bubbles and home page greeting
+- [ ] 02-03-PLAN.md — Quiz reactions, particles, and view integration
 
 ### Phase 3: Lesson Framework
 **Goal**: Content rendering system displays lessons appropriately for 7-year-olds
@@ -170,7 +172,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Setup | 3/3 | Complete | 2026-01-28 |
-| 2. Kiki Maskottchen System | 0/TBD | Not started | - |
+| 2. Kiki Maskottchen System | 0/3 | Planned | - |
 | 3. Lesson Framework | 0/TBD | Not started | - |
 | 4. Quiz System | 0/TBD | Not started | - |
 | 5. Progress & Rewards | 0/TBD | Not started | - |
