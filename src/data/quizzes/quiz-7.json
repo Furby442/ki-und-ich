@@ -1,0 +1,76 @@
+{
+  "lessonId": 7,
+  "title": "Quiz: Mini-Apps",
+  "questions": [
+    {
+      "question": "Was macht der Geschichten-Generator?",
+      "answers": [
+        "Er spielt Musik",
+        "Er schreibt eine Geschichte fuer dich",
+        "Er macht Fotos",
+        "Er raeumt dein Zimmer auf"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! Der Geschichten-Generator schreibt Geschichten nur fuer dich.",
+        "incorrect": "Der Geschichten-Generator schreibt Geschichten - basierend auf deinen Ideen!"
+      }
+    },
+    {
+      "question": "Was passiert beim Tier-Quiz?",
+      "answers": [
+        "Du faetterst virtuelle Tiere",
+        "KI stellt Fragen und erratet dein Tier",
+        "Du malst Tiere",
+        "Tiere stellen dir Fragen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! KI stellt kluge Fragen, um dein Tier zu erraten.",
+        "incorrect": "Beim Tier-Quiz stellt KI Fragen und versucht, dein Tier zu erraten."
+      }
+    },
+    {
+      "question": "Was macht die Witz-Maschine?",
+      "answers": [
+        "Sie repariert Sachen",
+        "Sie erzaehlt Witze",
+        "Sie macht Hausaufgaben",
+        "Sie singt Lieder"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! Die Witz-Maschine erzaehlt lustige Witze.",
+        "incorrect": "Die Witz-Maschine erzaehlt Witze - probier sie aus!"
+      }
+    },
+    {
+      "question": "Was hast du in diesem Kurs gelernt?",
+      "answers": [
+        "Nur wie man Spiele spielt",
+        "Was KI ist und wie man mit ihr spricht",
+        "Wie man kocht",
+        "Nichts"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Du weisst jetzt, was KI ist und wie du mit ihr sprichst.",
+        "incorrect": "Du hast gelernt, was KI ist und wie man gut mit ihr kommuniziert!"
+      }
+    },
+    {
+      "question": "Was bist du jetzt?",
+      "answers": [
+        "Ein Koch",
+        "Ein KI-Experte",
+        "Ein Pilot",
+        "Ein Astronaut"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Herzlichen Glueckwunsch! Du bist jetzt ein echter KI-Experte!",
+        "incorrect": "Du bist jetzt ein KI-Experte! Du hast alles gelernt!"
+      }
+    }
+  ]
+}

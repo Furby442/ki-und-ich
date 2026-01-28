@@ -1,0 +1,76 @@
+{
+  "lessonId": 6,
+  "title": "Quiz: Uebungen",
+  "questions": [
+    {
+      "question": "Wie bekommst du eine bessere Geschichte von KI?",
+      "answers": [
+        "Einfach 'Geschichte!' sagen",
+        "Viele Details nennen wie Thema und Stimmung",
+        "Laut fragen",
+        "Gar nicht - KI kann keine Geschichten"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Mit Details wie Thema und Stimmung wird die Geschichte besser.",
+        "incorrect": "Mit vielen Details (Thema, Stimmung) bekommst du bessere Geschichten."
+      }
+    },
+    {
+      "question": "Was solltest du bei Erklaerungen sagen?",
+      "answers": [
+        "Nichts besonderes",
+        "Erklaer es fuer Kinder",
+        "Mach es kompliziert",
+        "Sag nur ein Wort"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! Sag der KI, dass sie es einfach erklaeren soll.",
+        "incorrect": "Sag der KI, sie soll es fuer Kinder erklaeren - dann ist es verstaendlich."
+      }
+    },
+    {
+      "question": "Welche Frage nach Spielideen ist am besten?",
+      "answers": [
+        "Spiele?",
+        "Ideen!",
+        "5 Spielideen fuer draussen zu zweit",
+        "Irgendwelche Spiele halt"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Super! Zahlen und Bedingungen machen die Antwort viel nuetzlicher.",
+        "incorrect": "Am besten: '5 Spielideen fuer draussen zu zweit' - mit Zahl und Details!"
+      }
+    },
+    {
+      "question": "Warum helfen Zahlen bei Fragen an KI?",
+      "answers": [
+        "KI mag Mathe",
+        "KI weiss dann genau wie viel du willst",
+        "Zahlen sind lustig",
+        "Helfen gar nicht"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Mit Zahlen weiss KI genau, wie viele Ideen du brauchst.",
+        "incorrect": "Zahlen helfen, weil KI dann genau weiss, wie viele Dinge du willst."
+      }
+    },
+    {
+      "question": "Was macht eine gute KI-Frage aus?",
+      "answers": [
+        "Sie ist kurz und unklar",
+        "Sie ist klar, hat Details und sagt was du willst",
+        "Sie ist sehr lang und verwirrend",
+        "Sie hat keine Woerter"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Perfekt! Klare Fragen mit Details bringen die besten Antworten.",
+        "incorrect": "Gute Fragen sind klar, haben Details und sagen genau, was du willst."
+      }
+    }
+  ]
+}

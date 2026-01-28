@@ -1,0 +1,65 @@
+{
+  "id": 3,
+  "title": "Was kann KI heute?",
+  "description": "Entdecke, was KI schon alles kann",
+  "screens": [
+    {
+      "type": "intro",
+      "headline": "KI kann schon viel!",
+      "text": "KI wird immer besser. Lass uns schauen, was sie heute schon kann!",
+      "image": "robot-skills",
+      "kikiEmotion": "excited",
+      "kikiMessage": "Ich zeige dir, was KI alles drauf hat!"
+    },
+    {
+      "type": "content",
+      "headline": "KI als Helfer",
+      "text": "KI hilft Menschen bei vielen Aufgaben:",
+      "bullets": [
+        "Aerzte finden Krankheiten schneller",
+        "Autos koennen selbst fahren",
+        "Uebersetzer verstehen viele Sprachen"
+      ],
+      "highlight": "KI ist wie ein super schlauer Helfer!",
+      "kikiEmotion": "happy",
+      "kikiMessage": "KI macht schwere Arbeit leichter!"
+    },
+    {
+      "type": "content",
+      "headline": "KI in Spielen",
+      "text": "In Videospielen steckt auch KI:",
+      "bullets": [
+        "Gegner im Spiel denken selbst",
+        "Spielwelten werden automatisch gebaut",
+        "KI lernt, wie du spielst"
+      ],
+      "highlight": "Die Gegner in deinen Spielen werden von KI gesteuert!",
+      "kikiEmotion": "curious"
+    },
+    {
+      "type": "content",
+      "headline": "KI lernt selbst",
+      "text": "Das Besondere an KI: Sie kann lernen!",
+      "bullets": [
+        "KI ueb aus vielen Beispielen",
+        "Je mehr sie uebt, desto besser wird sie",
+        "Das nennt man Maschinelles Lernen"
+      ],
+      "highlight": "KI lernt aehnlich wie du - durch viel Ueben!",
+      "kikiEmotion": "thoughtful",
+      "kikiMessage": "Ich habe auch viel gelernt, um dir zu helfen!"
+    },
+    {
+      "type": "summary",
+      "headline": "Das hast du gelernt!",
+      "summaryPoints": [
+        "KI hilft Aerzten, Fahrern und Uebersetzern",
+        "KI steuert Gegner in Videospielen",
+        "KI lernt durch viele Beispiele"
+      ],
+      "nextStep": "Zeit fuers Quiz!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Wow, du weisst jetzt so viel ueber KI!"
+    }
+  ]
+}

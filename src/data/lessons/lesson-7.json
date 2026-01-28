@@ -1,0 +1,64 @@
+{
+  "id": 7,
+  "title": "Erste App bauen",
+  "description": "Probier KI mit Mini-Apps aus",
+  "screens": [
+    {
+      "type": "intro",
+      "headline": "Deine Mini-Apps!",
+      "text": "Jetzt kannst du KI selbst ausprobieren! Wir haben kleine Apps fuer dich gebaut.",
+      "image": "robot-builder",
+      "kikiEmotion": "excited",
+      "kikiMessage": "Das wird toll! Du kannst KI selbst testen!"
+    },
+    {
+      "type": "content",
+      "headline": "Geschichten-Generator",
+      "text": "Mit dem Geschichten-Generator kannst du:",
+      "bullets": [
+        "Eine Figur auswaehlen (Held, Tier, Roboter...)",
+        "Einen Ort waehlen (Wald, Weltraum, Stadt...)",
+        "KI schreibt dir eine Geschichte!"
+      ],
+      "highlight": "Die KI denkt sich eine Geschichte nur fuer dich aus!",
+      "kikiEmotion": "happy"
+    },
+    {
+      "type": "content",
+      "headline": "Tier-Quiz",
+      "text": "Beim Tier-Quiz passiert Folgendes:",
+      "bullets": [
+        "Du denkst an ein Tier",
+        "KI stellt dir Fragen",
+        "KI versucht zu erraten, welches Tier du meinst!"
+      ],
+      "highlight": "Mal sehen, ob KI dein Tier erraten kann!",
+      "kikiEmotion": "curious",
+      "kikiMessage": "Ich liebe Ratespiele!"
+    },
+    {
+      "type": "content",
+      "headline": "Noch mehr Apps",
+      "text": "Es gibt auch noch:",
+      "bullets": [
+        "Witz-Maschine: KI erzaehlt Witze",
+        "Namens-Bedeutung: KI erklaert, was Namen bedeuten"
+      ],
+      "highlight": "Probier alle Apps nach dem Quiz aus!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Du hast so viel gelernt - Zeit zum Spielen!"
+    },
+    {
+      "type": "summary",
+      "headline": "Geschafft!",
+      "summaryPoints": [
+        "Du kennst jetzt verschiedene KI-Arten",
+        "Du weisst, wie man mit KI spricht",
+        "Du kannst KI mit Mini-Apps ausprobieren"
+      ],
+      "nextStep": "Letztes Quiz - dann bist du ein KI-Experte!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Ich bin so stolz auf dich!"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": 2,
+  "title": "KI-Arten erklaert",
+  "description": "Lerne verschiedene Arten von KI kennen",
+  "screens": [
+    {
+      "type": "intro",
+      "headline": "Verschiedene KI-Helfer",
+      "text": "Es gibt verschiedene Arten von KI. Jede kann etwas anderes besonders gut!",
+      "image": "robot-types",
+      "kikiEmotion": "curious",
+      "kikiMessage": "Heute lernst du, welche KI-Arten es gibt!"
+    },
+    {
+      "type": "content",
+      "headline": "Text-KI",
+      "text": "Manche KI kann super mit Texten umgehen. Sie kann:",
+      "bullets": [
+        "Geschichten schreiben",
+        "Fragen beantworten",
+        "Texte uebersetzen"
+      ],
+      "highlight": "ChatGPT und Claude sind Text-KIs. Du kannst mit ihnen chatten!",
+      "kikiEmotion": "happy",
+      "kikiMessage": "Ich bin auch eine Art Text-KI!"
+    },
+    {
+      "type": "content",
+      "headline": "Bild-KI",
+      "text": "Andere KI kann toll mit Bildern arbeiten. Sie kann:",
+      "bullets": [
+        "Bilder erkennen und beschreiben",
+        "Neue Bilder malen",
+        "Gesichter in Fotos finden"
+      ],
+      "highlight": "Bild-KI hilft zum Beispiel beim Sortieren von Fotos auf deinem Handy.",
+      "kikiEmotion": "surprised",
+      "kikiMessage": "Stell dir vor: KI kann sogar Bilder malen!"
+    },
+    {
+      "type": "content",
+      "headline": "Sprach-KI",
+      "text": "Es gibt auch KI, die sprechen und hoeren kann:",
+      "bullets": [
+        "Alexa und Siri sind Sprach-KIs",
+        "Sie verstehen, was du sagst",
+        "Sie koennen dir antworten"
+      ],
+      "highlight": "Wenn du 'Hey Siri' sagst, hoert eine KI zu!",
+      "kikiEmotion": "happy"
+    },
+    {
+      "type": "summary",
+      "headline": "Das hast du gelernt!",
+      "summaryPoints": [
+        "Text-KI kann lesen und schreiben",
+        "Bild-KI kann Bilder erkennen und malen",
+        "Sprach-KI kann hoeren und sprechen"
+      ],
+      "nextStep": "Jetzt teste dein Wissen im Quiz!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Super! Du kennst jetzt die wichtigsten KI-Arten!"
+    }
+  ]
+}

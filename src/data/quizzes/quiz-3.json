@@ -1,0 +1,76 @@
+{
+  "lessonId": 3,
+  "title": "Quiz: Was kann KI?",
+  "questions": [
+    {
+      "question": "Wobei hilft KI den Aerzten?",
+      "answers": [
+        "Beim Kochen",
+        "Beim Finden von Krankheiten",
+        "Beim Putzen",
+        "Beim Einkaufen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! KI hilft Aerzten, Krankheiten schneller zu finden.",
+        "incorrect": "Nicht ganz. KI hilft Aerzten dabei, Krankheiten schneller zu finden."
+      }
+    },
+    {
+      "question": "Was steuert KI in Videospielen?",
+      "answers": [
+        "Die Musik",
+        "Die Farben",
+        "Die Gegner",
+        "Die Lautstaerke"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Super! KI steuert die Gegner, damit sie klug handeln.",
+        "incorrect": "Fast! KI steuert vor allem die Gegner in Spielen."
+      }
+    },
+    {
+      "question": "Wie nennt man es, wenn KI selbst lernt?",
+      "answers": [
+        "Computer-Lesen",
+        "Maschinen-Schlafen",
+        "Maschinelles Lernen",
+        "Digital-Spielen"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Genau! Maschinelles Lernen bedeutet, dass KI aus Beispielen lernt.",
+        "incorrect": "Das heisst Maschinelles Lernen - KI lernt aus vielen Beispielen."
+      }
+    },
+    {
+      "question": "Wodurch wird KI besser?",
+      "answers": [
+        "Durch Schlafen",
+        "Durch viel Ueben",
+        "Durch Nichtstun",
+        "Durch laute Musik"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! KI wird besser durch viel Ueben - genau wie du!",
+        "incorrect": "KI wird besser durch viel Ueben - aehnlich wie beim Lernen in der Schule."
+      }
+    },
+    {
+      "question": "Was koennen Autos mit KI?",
+      "answers": [
+        "Fliegen",
+        "Selbst fahren",
+        "Unsichtbar werden",
+        "Unter Wasser tauchen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! Autos mit KI koennen selbst fahren.",
+        "incorrect": "Autos mit KI koennen selbst fahren - das nennt man autonomes Fahren."
+      }
+    }
+  ]
+}

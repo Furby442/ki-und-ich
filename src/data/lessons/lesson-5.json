@@ -1,0 +1,65 @@
+{
+  "id": 5,
+  "title": "Mit KI sprechen",
+  "description": "Lerne, wie du am besten mit KI redest",
+  "screens": [
+    {
+      "type": "intro",
+      "headline": "Richtig fragen!",
+      "text": "Wenn du KI etwas fragst, ist es wichtig WIE du fragst. Das lernst du jetzt!",
+      "image": "robot-chat",
+      "kikiEmotion": "curious",
+      "kikiMessage": "Ich zeige dir, wie du mich am besten fragst!"
+    },
+    {
+      "type": "content",
+      "headline": "Klare Fragen stellen",
+      "text": "KI versteht klare Fragen besser:",
+      "bullets": [
+        "Schlecht: 'Erzaehl mir was'",
+        "Besser: 'Erzaehl mir eine kurze Geschichte ueber einen Hund'",
+        "Je genauer, desto besser!"
+      ],
+      "highlight": "Sag der KI genau, was du willst!",
+      "kikiEmotion": "thoughtful",
+      "kikiMessage": "Klare Fragen = bessere Antworten!"
+    },
+    {
+      "type": "content",
+      "headline": "Beispiele geben",
+      "text": "Du kannst KI Beispiele zeigen:",
+      "bullets": [
+        "'Schreib einen Witz wie: Warum ist die Banane krumm?'",
+        "'Male ein Tier wie eine Katze, aber mit Fluegeln'",
+        "Beispiele helfen der KI zu verstehen"
+      ],
+      "highlight": "Das nennt man Few-Shot: Du zeigst erst ein Beispiel!",
+      "kikiEmotion": "happy"
+    },
+    {
+      "type": "content",
+      "headline": "Schritt fuer Schritt",
+      "text": "Bei schweren Aufgaben: Teile sie auf!",
+      "bullets": [
+        "'Erst: Erklaer mir, was ein Planet ist'",
+        "'Dann: Nenne mir drei Planeten'",
+        "'Zuletzt: Welcher ist der groesste?'"
+      ],
+      "highlight": "Kleine Schritte fuehren zum Ziel!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Schritt fuer Schritt klappt am besten!"
+    },
+    {
+      "type": "summary",
+      "headline": "Das hast du gelernt!",
+      "summaryPoints": [
+        "Stelle klare und genaue Fragen",
+        "Gib Beispiele, wenn es hilft",
+        "Teile grosse Aufgaben in kleine Schritte"
+      ],
+      "nextStep": "Teste dein Wissen im Quiz!",
+      "kikiEmotion": "proud",
+      "kikiMessage": "Du wirst ein KI-Profi!"
+    }
+  ]
+}

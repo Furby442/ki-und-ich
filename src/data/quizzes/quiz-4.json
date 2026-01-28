@@ -1,0 +1,76 @@
+{
+  "lessonId": 4,
+  "title": "Quiz: KI im Alltag",
+  "questions": [
+    {
+      "question": "Wie entsperrt KI dein Handy?",
+      "answers": [
+        "Mit einem Schluessel",
+        "Mit Gesichtserkennung",
+        "Mit Magie",
+        "Mit einem Passwort-Zettel"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! KI erkennt dein Gesicht und entsperrt das Handy.",
+        "incorrect": "KI nutzt Gesichtserkennung - sie erkennt dein Gesicht!"
+      }
+    },
+    {
+      "question": "Was macht Netflix mit Hilfe von KI?",
+      "answers": [
+        "Filme drehen",
+        "Filme vorschlagen",
+        "Popcorn machen",
+        "Fernseher reparieren"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! Netflix nutzt KI, um dir passende Filme vorzuschlagen.",
+        "incorrect": "Netflix nutzt KI, um dir Filme vorzuschlagen, die dir gefallen koennten."
+      }
+    },
+    {
+      "question": "Warum faehrt ein Saugroboter nicht gegen Moebel?",
+      "answers": [
+        "Er hat Augen wie ein Mensch",
+        "Er nutzt KI zum Navigieren",
+        "Jemand steuert ihn fern",
+        "Er faehrt nur im Kreis"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! KI hilft dem Saugroboter, Hindernisse zu erkennen.",
+        "incorrect": "Der Saugroboter nutzt KI - sie hilft ihm, Moebel zu erkennen und auszuweichen."
+      }
+    },
+    {
+      "question": "Wer schlaegt dir bei Spotify neue Musik vor?",
+      "answers": [
+        "Ein Mensch in der Firma",
+        "Zufaellig irgendwer",
+        "KI",
+        "Deine Eltern"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Richtig! KI merkt sich, welche Musik dir gefaellt.",
+        "incorrect": "Das macht KI! Sie lernt, welche Musik du magst."
+      }
+    },
+    {
+      "question": "Was passiert, wenn du beim Tippen Vorschlaege bekommst?",
+      "answers": [
+        "Das Handy raet zufaellig",
+        "KI schlaegt Woerter vor",
+        "Ein Freund tippt mit",
+        "Das ist nur ein Trick"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! KI lernt, wie du schreibst und schlaegt passende Woerter vor.",
+        "incorrect": "Das ist KI! Sie lernt deine Schreibweise und schlaegt Woerter vor."
+      }
+    }
+  ]
+}

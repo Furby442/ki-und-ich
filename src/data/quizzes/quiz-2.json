@@ -1,0 +1,76 @@
+{
+  "lessonId": 2,
+  "title": "Quiz: KI-Arten",
+  "questions": [
+    {
+      "question": "Was kann eine Text-KI besonders gut?",
+      "answers": [
+        "Bilder malen",
+        "Geschichten schreiben",
+        "Musik spielen",
+        "Videos drehen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Text-KI kann super Texte und Geschichten schreiben.",
+        "incorrect": "Nicht ganz. Text-KI kann besonders gut Texte und Geschichten schreiben."
+      }
+    },
+    {
+      "question": "Welche KI kann Bilder erkennen?",
+      "answers": [
+        "Text-KI",
+        "Musik-KI",
+        "Bild-KI",
+        "Rechen-KI"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Richtig! Bild-KI kann Bilder erkennen und sogar neue malen.",
+        "incorrect": "Das war knapp! Bild-KI ist die richtige Antwort - sie kann Bilder erkennen."
+      }
+    },
+    {
+      "question": "Siri und Alexa sind Beispiele fuer welche KI-Art?",
+      "answers": [
+        "Bild-KI",
+        "Sprach-KI",
+        "Text-KI",
+        "Spiele-KI"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! Siri und Alexa sind Sprach-KIs, die hoeren und antworten koennen.",
+        "incorrect": "Fast! Siri und Alexa sind Sprach-KIs - sie verstehen, was du sagst."
+      }
+    },
+    {
+      "question": "Was passiert, wenn du 'Hey Siri' sagst?",
+      "answers": [
+        "Nichts besonderes",
+        "Eine KI hoert zu",
+        "Ein Mensch antwortet",
+        "Das Handy geht aus"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Eine Sprach-KI hoert zu und wartet auf deine Frage.",
+        "incorrect": "Nicht ganz. Wenn du 'Hey Siri' sagst, hoert eine KI zu!"
+      }
+    },
+    {
+      "question": "Welche KI-Art hilft beim Sortieren von Fotos auf dem Handy?",
+      "answers": [
+        "Text-KI",
+        "Sprach-KI",
+        "Bild-KI",
+        "Rechen-KI"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Richtig! Bild-KI kann Gesichter erkennen und Fotos sortieren.",
+        "incorrect": "Das war die Bild-KI! Sie kann Gesichter erkennen und Fotos sortieren."
+      }
+    }
+  ]
+}

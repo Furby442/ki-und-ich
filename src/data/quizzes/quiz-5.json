@@ -1,0 +1,76 @@
+{
+  "lessonId": 5,
+  "title": "Quiz: Mit KI sprechen",
+  "questions": [
+    {
+      "question": "Welche Frage ist besser fuer KI?",
+      "answers": [
+        "Erzaehl mir was",
+        "Mach irgendwas",
+        "Erzaehl mir eine Geschichte ueber einen Drachen",
+        "Hm, weiss nicht"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Genau! Je klarer deine Frage, desto besser die Antwort.",
+        "incorrect": "Die genaue Frage ist besser: 'Erzaehl mir eine Geschichte ueber einen Drachen'."
+      }
+    },
+    {
+      "question": "Was bedeutet 'Few-Shot'?",
+      "answers": [
+        "Wenig schlafen",
+        "Ein Beispiel zeigen",
+        "Laut schreien",
+        "Schnell tippen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Richtig! Few-Shot bedeutet, dass du der KI ein Beispiel gibst.",
+        "incorrect": "Few-Shot bedeutet, dass du der KI ein Beispiel zeigst."
+      }
+    },
+    {
+      "question": "Was solltest du bei schweren Aufgaben tun?",
+      "answers": [
+        "Aufgeben",
+        "Alles auf einmal fragen",
+        "In kleine Schritte aufteilen",
+        "Jemand anderen fragen"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Super! Kleine Schritte helfen KI, dich besser zu verstehen.",
+        "incorrect": "Am besten teilst du schwere Aufgaben in kleine Schritte auf."
+      }
+    },
+    {
+      "question": "Warum sind klare Fragen wichtig?",
+      "answers": [
+        "Weil KI schlecht hoert",
+        "Weil KI genauer antworten kann",
+        "Weil es schneller geht",
+        "Weil es lustiger ist"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! Mit klaren Fragen kann KI viel genauer antworten.",
+        "incorrect": "Klare Fragen sind wichtig, weil KI dann genauer antworten kann."
+      }
+    },
+    {
+      "question": "Wie fragst du am besten nach einem Witz?",
+      "answers": [
+        "Witz!",
+        "Erzaehl mir einen kurzen Witz ueber Tiere",
+        "Sag was Lustiges oder so",
+        "Haha?"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Perfekt! Du sagst genau, was fuer einen Witz du willst.",
+        "incorrect": "Besser: 'Erzaehl mir einen kurzen Witz ueber Tiere' - klar und genau!"
+      }
+    }
+  ]
+}
