@@ -1,24 +1,15 @@
 /**
  * Lesson View - Individual lesson page
  *
- * Displays lesson content with navigation to previous/next pages.
- * Placeholder for Phase 3 content implementation.
+ * Displays lesson content using LessonRenderer.
+ * Loads lesson data from JSON files.
  */
 
-import { Navigation } from '../components/navigation.js';
+import { LessonRenderer } from '../components/lesson/lesson-renderer.js';
+import { loadLesson } from '../data/lesson-loader.js';
 
-/**
- * Lesson titles (matching home page)
- */
-const LESSON_TITLES = {
-    1: 'Was ist KI?',
-    2: 'KI-Arten erklärt',
-    3: 'Was kann KI heute?',
-    4: 'KI im Alltag',
-    5: 'Mit KI sprechen',
-    6: 'Übungen',
-    7: 'Erste App bauen'
-};
+// Store current renderer for cleanup
+let currentRenderer = null;
 
 /**
  * Render lesson view
@@ -26,60 +17,51 @@ const LESSON_TITLES = {
  * @param {object} state - Application state manager
  * @param {object} params - Route parameters (contains id)
  */
-export function LessonView(container, state, params) {
+export async function LessonView(container, state, params) {
     const lessonId = parseInt(params.id, 10);
-    const lessonTitle = LESSON_TITLES[lessonId] || 'Unbekannte Lektion';
 
-    // Navigation configuration
-    const showBack = lessonId > 1;
-    const backUrl = lessonId === 1 ? '#/' : `#/lesson/${lessonId - 1}`;
-    const nextUrl = `#/quiz/${lessonId}`;
+    // Cleanup previous renderer
+    if (currentRenderer) {
+        currentRenderer.destroy();
+        currentRenderer = null;
+    }
 
-    const navigationHtml = Navigation({
-        showBack: true, // Always show back (to home or previous lesson)
-        showNext: true,
-        backUrl: backUrl,
-        nextUrl: nextUrl,
-        currentStep: lessonId,
-        totalSteps: 7
-    });
-
+    // Show loading state
     container.innerHTML = `
         <div class="container lesson-page">
-            <header class="lesson-header">
-                <div class="lesson-badge">Lektion ${lessonId}</div>
-                <h1>${lessonTitle}</h1>
-            </header>
-
-            <main class="lesson-content">
-                <div class="placeholder-message">
-                    <p>📚 Lektion ${lessonId} Inhalt kommt in Phase 3</p>
-                    <p class="text-secondary">Hier wird der Lerninhalt angezeigt.</p>
-                </div>
-            </main>
+            <div class="lesson-loading">
+                <p>Lektion wird geladen...</p>
+            </div>
         </div>
-
-        ${navigationHtml}
     `;
 
-    // Set Kiki emotion based on lesson
-    if (window.kiki) {
-        // Lesson 1: curious (introduction)
-        // Lesson 7: proud (final lesson)
-        // Others: happy (standard learning)
-        const emotion = lessonId === 1 ? 'curious' : lessonId === 7 ? 'proud' : 'happy';
-        window.kiki.setEmotion(emotion);
+    try {
+        // Load lesson data
+        const lessonData = await loadLesson(lessonId);
 
-        // Brief message on first visit to this lesson (per session)
-        const sessionKey = `kiki_lesson_${lessonId}_visited`;
-        if (!sessionStorage.getItem(sessionKey)) {
-            setTimeout(() => {
-                const message = lessonId === 1
-                    ? 'Lektion 1 - das wird spannend!'
-                    : `Weiter geht's mit Lektion ${lessonId}!`;
-                window.kiki.speak(message, { duration: 3000 });
-                sessionStorage.setItem(sessionKey, 'true');
-            }, 300);
+        // Create and render lesson
+        currentRenderer = new LessonRenderer(container, lessonData, state);
+        currentRenderer.render();
+
+    } catch (error) {
+        console.error('Fehler beim Laden der Lektion:', error);
+
+        // Show error state
+        container.innerHTML = `
+            <div class="container lesson-page">
+                <div class="lesson-error">
+                    <h2>Lektion nicht verfügbar</h2>
+                    <p>Lektion ${lessonId} konnte nicht geladen werden.</p>
+                    <p class="text-secondary">${error.message}</p>
+                    <a href="#/" class="btn btn-primary">Zurück zur Übersicht</a>
+                </div>
+            </div>
+        `;
+
+        // Set Kiki to sad on error
+        if (window.kiki) {
+            window.kiki.setEmotion('sad');
+            window.kiki.speak('Oh nein! Die Lektion konnte nicht geladen werden.', { duration: 4000 });
         }
     }
 }

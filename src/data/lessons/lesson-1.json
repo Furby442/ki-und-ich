@@ -1,0 +1,79 @@
+{
+  "id": 1,
+  "title": "Was ist KI?",
+  "description": "Lerne, was Künstliche Intelligenz bedeutet",
+  "screens": [
+    {
+      "type": "intro",
+      "content": {
+        "headline": "Was ist KI?",
+        "text": "Hallo! Heute lernst du, was KI bedeutet. KI ist die Abkürzung für Künstliche Intelligenz.",
+        "image": "robot-wave"
+      },
+      "kikiEmotion": "happy",
+      "kikiMessage": "Das wird spannend! Lass uns loslegen!"
+    },
+    {
+      "type": "explanation",
+      "content": {
+        "headline": "Computer, die lernen",
+        "text": "KI sind Computer-Programme. Sie können Dinge lernen. Wie du in der Schule!",
+        "bullets": [
+          "KI kann Bilder erkennen",
+          "KI kann Texte verstehen",
+          "KI kann Fragen beantworten"
+        ]
+      },
+      "kikiEmotion": "curious",
+      "kikiMessage": "Computer die lernen - ist das nicht cool?"
+    },
+    {
+      "type": "example",
+      "content": {
+        "headline": "KI im Alltag",
+        "text": "Du hast bestimmt schon KI benutzt! Hier sind Beispiele:",
+        "examples": [
+          {
+            "title": "Sprachassistenten",
+            "description": "Siri, Alexa oder Google verstehen deine Sprache."
+          },
+          {
+            "title": "Foto-Filter",
+            "description": "Lustige Gesichter in Apps wie Snapchat."
+          },
+          {
+            "title": "Empfehlungen",
+            "description": "YouTube schlägt dir Videos vor."
+          }
+        ]
+      },
+      "kikiEmotion": "surprised",
+      "kikiMessage": "Wow! KI ist überall um uns herum!"
+    },
+    {
+      "type": "explanation",
+      "content": {
+        "headline": "Wie lernt KI?",
+        "text": "KI lernt aus vielen Beispielen. Stell dir vor: Du zeigst ihr 1000 Katzenbilder. Dann erkennt sie Katzen!",
+        "highlight": "Je mehr Beispiele, desto besser lernt die KI."
+      },
+      "kikiEmotion": "thoughtful",
+      "kikiMessage": "Das ist wie beim Vokabeln lernen - Übung macht den Meister!"
+    },
+    {
+      "type": "summary",
+      "content": {
+        "headline": "Das hast du gelernt",
+        "summary": [
+          "KI bedeutet Künstliche Intelligenz",
+          "KI sind Programme, die lernen können",
+          "KI ist schon in vielen Geräten",
+          "KI braucht viele Beispiele zum Lernen"
+        ],
+        "nextStep": "Im Quiz kannst du testen, was du behalten hast!"
+      },
+      "kikiEmotion": "proud",
+      "kikiMessage": "Super! Du weißt jetzt was KI ist! Bereit fürs Quiz?"
+    }
+  ]
+}
