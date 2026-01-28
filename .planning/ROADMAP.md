@@ -19,8 +19,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Progress & Rewards** - Tracking, animations, and motivational feedback
 - [x] **Phase 6: Core Lessons 1-4** - Foundation AI knowledge content
 - [x] **Phase 7: Advanced Lessons 5-6** - Prompting techniques and practice exercises
-- [ ] **Phase 8: Mini-Apps & Lesson 7** - Interactive capstone with 4 AI simulators
-- [ ] **Phase 9: Polish & Teacher Mode** - Final enhancements for classroom deployment
+- [x] **Phase 8: Mini-Apps & Lesson 7** - Interactive capstone with 4 AI simulators
+- [x] **Phase 9: Polish & Teacher Mode** - Final enhancements for classroom deployment
 
 ## Phase Details
 
@@ -168,7 +168,7 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 09-01: TBD
+- [x] 09-01: Teacher Mode implementation (YOLO)
 
 ## Progress
 
@@ -184,8 +184,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 5. Progress & Rewards | 3/3 | Complete | 2026-01-28 |
 | 6. Core Lessons 1-4 | 1/1 | Complete | 2026-01-28 |
 | 7. Advanced Lessons 5-6 | 1/1 | Complete | 2026-01-28 |
-| 8. Mini-Apps & Lesson 7 | 0/TBD | Not started | - |
-| 9. Polish & Teacher Mode | 0/TBD | Not started | - |
+| 8. Mini-Apps & Lesson 7 | 1/1 | Complete | 2026-01-28 |
+| 9. Polish & Teacher Mode | 1/1 | Complete | 2026-01-28 |
 
 ---
 *Roadmap created: 2026-01-28*
