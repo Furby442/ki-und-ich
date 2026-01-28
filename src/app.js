@@ -6,6 +6,9 @@
 
 import { Router } from './services/router.js';
 import { StateManager } from './services/state.js';
+import { HomeView } from './views/home.js';
+import { LessonView } from './views/lesson.js';
+import { QuizView } from './views/quiz.js';
 
 // Initialize state manager
 const state = new StateManager();
@@ -16,66 +19,11 @@ window.appState = state;
 
 // Define application routes
 const routes = {
-    '/': homeView,
-    '/lesson/:id': lessonView,
-    '/quiz/:id': quizView,
+    '/': (container, params) => HomeView(container, state),
+    '/lesson/:id': (container, params) => LessonView(container, state, params),
+    '/quiz/:id': (container, params) => QuizView(container, state, params),
     '/404': notFoundView
 };
-
-/**
- * Home view - Landing page
- */
-function homeView(container, params) {
-    // Update last visited
-    state.set('lastVisited', new Date().toISOString());
-
-    const currentLesson = state.get('currentLesson');
-    const completedLessons = state.get('completedLessons');
-
-    container.innerHTML = `
-        <div class="container">
-            <h1>Home - KI und ich</h1>
-            <p>Willkommen bei "KI und ich" - Lerne Künstliche Intelligenz!</p>
-            <div class="mt-lg">
-                <p><small>Aktuelle Lektion: ${currentLesson} | Abgeschlossen: ${completedLessons.length}</small></p>
-                <a href="#/lesson/1" class="btn">Lektion 1 starten</a>
-            </div>
-        </div>
-    `;
-}
-
-/**
- * Lesson view - Individual lesson
- */
-function lessonView(container, params) {
-    const lessonId = params.id || '?';
-    container.innerHTML = `
-        <div class="container">
-            <h1>Lektion ${lessonId}</h1>
-            <p>Hier kommt der Inhalt für Lektion ${lessonId}.</p>
-            <div class="mt-lg">
-                <a href="#/" class="btn btn-outline">Zurück zur Startseite</a>
-                <a href="#/quiz/${lessonId}" class="btn btn-secondary">Quiz starten</a>
-            </div>
-        </div>
-    `;
-}
-
-/**
- * Quiz view - Lesson quiz
- */
-function quizView(container, params) {
-    const quizId = params.id || '?';
-    container.innerHTML = `
-        <div class="container">
-            <h1>Quiz ${quizId}</h1>
-            <p>Quiz für Lektion ${quizId} wird hier angezeigt.</p>
-            <div class="mt-lg">
-                <a href="#/lesson/${quizId}" class="btn btn-outline">Zurück zur Lektion</a>
-            </div>
-        </div>
-    `;
-}
 
 /**
  * 404 view - Not found

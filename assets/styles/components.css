@@ -293,6 +293,62 @@
     }
 }
 
+/* Lesson Page */
+.lesson-page,
+.quiz-page {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lesson-header,
+.quiz-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.lesson-badge,
+.quiz-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-sm);
+}
+
+.lesson-header h1,
+.quiz-header h1 {
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.lesson-content,
+.quiz-content {
+    background-color: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    min-height: 300px;
+}
+
+.placeholder-message {
+    text-align: center;
+    padding: var(--space-xxl) var(--space-lg);
+}
+
+.placeholder-message p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
 /* Navigation Bar */
 .nav-bar {
     position: fixed;
