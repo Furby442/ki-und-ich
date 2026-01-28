@@ -1,10 +1,18 @@
 /**
  * KI und ich - Application Entry Point
  *
- * Initializes the SPA with routing and error handling.
+ * Initializes the SPA with routing, state management, and error handling.
  */
 
 import { Router } from './services/router.js';
+import { StateManager } from './services/state.js';
+
+// Initialize state manager
+const state = new StateManager();
+state.enableAutoSave();
+
+// Make state available globally for views (simple approach for Phase 1)
+window.appState = state;
 
 // Define application routes
 const routes = {
@@ -18,11 +26,18 @@ const routes = {
  * Home view - Landing page
  */
 function homeView(container, params) {
+    // Update last visited
+    state.set('lastVisited', new Date().toISOString());
+
+    const currentLesson = state.get('currentLesson');
+    const completedLessons = state.get('completedLessons');
+
     container.innerHTML = `
         <div class="container">
             <h1>Home - KI und ich</h1>
             <p>Willkommen bei "KI und ich" - Lerne Künstliche Intelligenz!</p>
             <div class="mt-lg">
+                <p><small>Aktuelle Lektion: ${currentLesson} | Abgeschlossen: ${completedLessons.length}</small></p>
                 <a href="#/lesson/1" class="btn">Lektion 1 starten</a>
             </div>
         </div>
