@@ -64,6 +64,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 80px; /* Space for fixed navigation bar */
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);

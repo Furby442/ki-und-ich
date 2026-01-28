@@ -154,6 +154,135 @@
     border: 1px solid #bee5eb;
 }
 
+/* Navigation Bar */
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: var(--space-sm);
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    min-width: 48px;
+    min-height: 48px;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-btn:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-btn:focus {
+    outline: 3px solid rgba(88, 204, 2, 0.4);
+    outline-offset: 2px;
+}
+
+.nav-btn-icon {
+    font-size: var(--font-size-lg);
+    line-height: 1;
+}
+
+.nav-btn-text {
+    display: none;
+}
+
+.nav-btn-spacer {
+    width: 48px;
+    min-height: 48px;
+}
+
+.nav-progress {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Progress Bar Component */
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.progress-segments {
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+}
+
+.progress-segment {
+    flex: 1;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-background-alt);
+    transition: background-color var(--transition-base);
+}
+
+.progress-segment--completed {
+    background-color: var(--color-primary);
+}
+
+.progress-segment--current {
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 0 2px rgba(31, 163, 243, 0.3);
+}
+
+.progress-segment--upcoming {
+    background-color: var(--color-background-alt);
+}
+
+.progress-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Tablet and Desktop: Show button text */
+@media (min-width: 600px) {
+    .nav-btn-text {
+        display: inline;
+    }
+
+    .nav-btn {
+        min-width: auto;
+        padding: var(--space-sm) var(--space-lg);
+    }
+}
+
 /* Accessibility: Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
@@ -165,6 +294,10 @@
     }
 
     .btn:hover {
+        transform: none;
+    }
+
+    .nav-btn:hover {
         transform: none;
     }
 }
