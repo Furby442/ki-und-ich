@@ -1,24 +1,15 @@
 /**
  * Quiz View - Lesson quiz page
  *
- * Displays quiz content with navigation to lesson/next lesson.
- * Placeholder for Phase 4 quiz implementation.
+ * Displays quiz content using QuizRenderer.
+ * Loads quiz data from JSON files and integrates with Kiki.
  */
 
-import { Navigation } from '../components/navigation.js';
+import { QuizRenderer } from '../components/quiz/quiz-renderer.js';
+import { loadQuiz } from '../data/quiz-loader.js';
 
-/**
- * Lesson titles (matching home and lesson pages)
- */
-const LESSON_TITLES = {
-    1: 'Was ist KI?',
-    2: 'KI-Arten erklärt',
-    3: 'Was kann KI heute?',
-    4: 'KI im Alltag',
-    5: 'Mit KI sprechen',
-    6: 'Übungen',
-    7: 'Erste App bauen'
-};
+// Store current renderer for cleanup
+let currentRenderer = null;
 
 /**
  * Render quiz view
@@ -26,46 +17,79 @@ const LESSON_TITLES = {
  * @param {object} state - Application state manager
  * @param {object} params - Route parameters (contains id)
  */
-export function QuizView(container, state, params) {
+export async function QuizView(container, state, params) {
     const quizId = parseInt(params.id, 10);
-    const lessonTitle = LESSON_TITLES[quizId] || 'Unbekannte Lektion';
 
-    // Navigation configuration
-    const backUrl = `#/lesson/${quizId}`;
-    const isLastQuiz = quizId === 7;
-    const nextUrl = isLastQuiz ? '#/' : `#/lesson/${quizId + 1}`;
+    // Cleanup previous renderer
+    if (currentRenderer) {
+        currentRenderer.destroy();
+        currentRenderer = null;
+    }
 
-    const navigationHtml = Navigation({
-        showBack: true,
-        showNext: true,
-        backUrl: backUrl,
-        nextUrl: nextUrl,
-        currentStep: quizId,
-        totalSteps: 7
-    });
-
+    // Show loading state
     container.innerHTML = `
-        <div class="container quiz-page">
-            <header class="quiz-header">
-                <div class="quiz-badge">Quiz ${quizId}</div>
-                <h1>${lessonTitle}</h1>
-            </header>
-
-            <main class="quiz-content">
-                <div class="placeholder-message">
-                    <p>❓ Quiz kommt in Phase 4</p>
-                    <p class="text-secondary">Hier werden Fragen zur Lektion angezeigt.</p>
-                </div>
-            </main>
+        <div class="quiz-wrapper">
+            <div class="quiz-loading">
+                <p>Quiz wird geladen...</p>
+            </div>
         </div>
-
-        ${navigationHtml}
     `;
 
-    // Set Kiki to curious (waiting for answers)
+    // Set Kiki to curious while loading
     if (window.kiki) {
         window.kiki.setEmotion('curious');
     }
+
+    try {
+        // Load quiz data
+        const quizData = await loadQuiz(quizId);
+
+        // Create and render quiz
+        currentRenderer = new QuizRenderer(container, quizData, state);
+        currentRenderer.render();
+
+        // Setup event listeners for Kiki integration
+        setupKikiIntegration(container);
+
+    } catch (error) {
+        console.error('Fehler beim Laden des Quiz:', error);
+
+        // Show error state
+        container.innerHTML = `
+            <div class="quiz-wrapper">
+                <div class="quiz-error">
+                    <h2>Quiz nicht verfügbar</h2>
+                    <p>Quiz ${quizId} konnte nicht geladen werden.</p>
+                    <p class="text-secondary">${error.message}</p>
+                    <a href="#/lesson/${quizId}" class="quiz-btn quiz-btn--home">Zurück zur Lektion</a>
+                </div>
+            </div>
+        `;
+
+        // Set Kiki to sad on error
+        if (window.kiki) {
+            window.kiki.setEmotion('sad');
+            window.kiki.speak('Oh nein! Das Quiz konnte nicht geladen werden.', { duration: 4000 });
+        }
+    }
+}
+
+/**
+ * Setup event listeners for Kiki integration
+ * @param {HTMLElement} container - Container element
+ */
+function setupKikiIntegration(container) {
+    // Listen for quiz answer events
+    container.addEventListener('quiz-answer', (e) => {
+        const { correct } = e.detail;
+        answerQuestion(correct);
+    });
+
+    // Listen for quiz complete events
+    container.addEventListener('quiz-complete', (e) => {
+        const { score, total } = e.detail;
+        completeQuiz(score, total);
+    });
 }
 
 /**

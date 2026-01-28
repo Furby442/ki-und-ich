@@ -1,0 +1,76 @@
+{
+  "lessonId": 1,
+  "title": "Quiz: Was ist KI?",
+  "questions": [
+    {
+      "question": "Was bedeutet KI?",
+      "answers": [
+        "Kleine Idee",
+        "Künstliche Intelligenz",
+        "Kinder Internet",
+        "Kluge Information"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! KI steht für Künstliche Intelligenz.",
+        "incorrect": "Nicht ganz. KI bedeutet Künstliche Intelligenz."
+      }
+    },
+    {
+      "question": "Was können KI-Programme tun?",
+      "answers": [
+        "Nur rechnen",
+        "Nur spielen",
+        "Lernen und Muster erkennen",
+        "Gar nichts"
+      ],
+      "correctIndex": 2,
+      "feedback": {
+        "correct": "Richtig! KI kann aus Beispielen lernen.",
+        "incorrect": "KI-Programme können lernen und Muster erkennen."
+      }
+    },
+    {
+      "question": "Wo findest du KI im Alltag?",
+      "answers": [
+        "Nur in Robotern",
+        "In Sprachassistenten wie Siri oder Alexa",
+        "Nur in der Schule",
+        "Nirgendwo"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Super! Siri und Alexa nutzen KI zum Verstehen.",
+        "incorrect": "Sprachassistenten wie Siri oder Alexa nutzen KI."
+      }
+    },
+    {
+      "question": "Wie lernt eine KI Katzen zu erkennen?",
+      "answers": [
+        "Sie liest ein Buch",
+        "Sie schaut viele Katzenbilder an",
+        "Sie fragt einen Menschen",
+        "Sie kann das nicht lernen"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Genau! KI lernt aus vielen Beispielbildern.",
+        "incorrect": "KI lernt aus vielen Beispielen - wie Katzenbildern."
+      }
+    },
+    {
+      "question": "Was braucht KI zum Lernen?",
+      "answers": [
+        "Einen Lehrer",
+        "Viele Beispiele",
+        "Bücher",
+        "Nichts"
+      ],
+      "correctIndex": 1,
+      "feedback": {
+        "correct": "Toll! Je mehr Beispiele, desto besser lernt KI.",
+        "incorrect": "KI braucht viele Beispiele zum Lernen."
+      }
+    }
+  ]
+}
