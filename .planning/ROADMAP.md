@@ -36,10 +36,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. All interactive elements are at least 48x48px (touch-friendly)
   6. App is deployed to GitHub Pages and accessible via public URL
   7. App stores no personal data (DSGVO-compliant for schools)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — Project scaffolding, Router, and StateManager
+- [ ] 01-02-PLAN.md — Navigation components and Home/Lesson/Quiz views
+- [ ] 01-03-PLAN.md — GitHub Pages deployment and verification
 
 ### Phase 2: Kiki Maskottchen System
 **Goal**: Kiki becomes an engaging, emotionally responsive guide throughout the learning journey
@@ -167,7 +169,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Setup | 0/TBD | Not started | - |
+| 1. Foundation & Setup | 0/3 | Planned | - |
 | 2. Kiki Maskottchen System | 0/TBD | Not started | - |
 | 3. Lesson Framework | 0/TBD | Not started | - |
 | 4. Quiz System | 0/TBD | Not started | - |
