@@ -71,6 +71,12 @@ export function HomeView(container, state) {
             <div class="lesson-grid">
                 ${lessonCards}
             </div>
+
+            <div class="home-apps-link">
+                <a href="#/apps" class="btn btn-secondary">
+                    🎮 Mini-Apps ausprobieren
+                </a>
+            </div>
         </div>
     `;
 

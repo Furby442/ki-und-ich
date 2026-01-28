@@ -17,8 +17,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Lesson Framework** - Content rendering engine with age-appropriate display
 - [x] **Phase 4: Quiz System** - Interactive quizzes with immediate feedback
 - [x] **Phase 5: Progress & Rewards** - Tracking, animations, and motivational feedback
-- [ ] **Phase 6: Core Lessons 1-4** - Foundation AI knowledge content
-- [ ] **Phase 7: Advanced Lessons 5-6** - Prompting techniques and practice exercises
+- [x] **Phase 6: Core Lessons 1-4** - Foundation AI knowledge content
+- [x] **Phase 7: Advanced Lessons 5-6** - Prompting techniques and practice exercises
 - [ ] **Phase 8: Mini-Apps & Lesson 7** - Interactive capstone with 4 AI simulators
 - [ ] **Phase 9: Polish & Teacher Mode** - Final enhancements for classroom deployment
 
@@ -182,8 +182,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 3. Lesson Framework | 3/3 | Complete | 2026-01-28 |
 | 4. Quiz System | 3/3 | Complete | 2026-01-28 |
 | 5. Progress & Rewards | 3/3 | Complete | 2026-01-28 |
-| 6. Core Lessons 1-4 | 0/TBD | Not started | - |
-| 7. Advanced Lessons 5-6 | 0/TBD | Not started | - |
+| 6. Core Lessons 1-4 | 1/1 | Complete | 2026-01-28 |
+| 7. Advanced Lessons 5-6 | 1/1 | Complete | 2026-01-28 |
 | 8. Mini-Apps & Lesson 7 | 0/TBD | Not started | - |
 | 9. Polish & Teacher Mode | 0/TBD | Not started | - |
 

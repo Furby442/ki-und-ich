@@ -226,6 +226,13 @@
     margin: 0 auto;
 }
 
+.home-apps-link {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
 /* Lesson Grid */
 .lesson-grid {
     display: grid;

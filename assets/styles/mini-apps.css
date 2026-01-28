@@ -1,0 +1,558 @@
+/* ========================================
+   MINI-APPS STYLES
+   ======================================== */
+
+/* ========================================
+   APP SELECTION PAGE
+   ======================================== */
+
+.mini-apps-page {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.mini-apps-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.mini-apps-header h1 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.mini-apps-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+.mini-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    max-width: 500px;
+    margin: 0 auto var(--space-xl);
+}
+
+.mini-app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+    background: white;
+    border: 3px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    min-height: 140px;
+}
+
+.mini-app-card:hover {
+    border-color: var(--color-secondary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.mini-app-card-emoji {
+    font-size: 48px;
+    margin-bottom: var(--space-sm);
+}
+
+.mini-app-card-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+.mini-apps-back {
+    text-align: center;
+}
+
+/* ========================================
+   SINGLE APP VIEW
+   ======================================== */
+
+.mini-app-back-link {
+    margin-bottom: var(--space-md);
+}
+
+.mini-app-back {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+.mini-app-back:hover {
+    text-decoration: underline;
+}
+
+.mini-app-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   SHARED MINI-APP STYLES
+   ======================================== */
+
+.mini-app {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.mini-app-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.mini-app-title {
+    font-size: 24px;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.mini-app-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+}
+
+.mini-app-section {
+    margin-bottom: var(--space-lg);
+}
+
+.mini-app-section h3 {
+    font-size: 18px;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+/* ========================================
+   OPTION BUTTONS
+   ======================================== */
+
+.mini-app-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.mini-app-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--color-background-alt);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: var(--font-size-base);
+}
+
+.mini-app-option:hover {
+    border-color: var(--color-secondary);
+    background: white;
+}
+
+.mini-app-option.selected {
+    border-color: var(--color-primary);
+    background: rgba(88, 204, 2, 0.1);
+}
+
+.mini-app-option-emoji {
+    font-size: 24px;
+}
+
+.mini-app-option-text {
+    flex: 1;
+}
+
+/* ========================================
+   ACTION BUTTONS
+   ======================================== */
+
+.mini-app-generate-btn {
+    display: block;
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: var(--space-md);
+}
+
+.mini-app-generate-btn:hover:not(:disabled) {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.mini-app-generate-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.mini-app-again-btn {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    margin-top: var(--space-md);
+    transition: all 0.2s ease;
+}
+
+.mini-app-again-btn:hover {
+    background: #1899d6;
+}
+
+/* ========================================
+   RESULT DISPLAY
+   ======================================== */
+
+.mini-app-result {
+    margin-top: var(--space-lg);
+}
+
+/* ========================================
+   STORY GENERATOR
+   ======================================== */
+
+.story-output {
+    background: var(--color-background-alt);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+}
+
+.story-output h3 {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.story-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* ========================================
+   ANIMAL QUIZ
+   ======================================== */
+
+.animal-quiz-start,
+.animal-quiz-question,
+.animal-quiz-result {
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.animal-quiz-instruction {
+    font-size: 18px;
+    margin-bottom: var(--space-md);
+}
+
+.animal-quiz-q-number {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.animal-quiz-q-text {
+    font-size: 22px;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+}
+
+.animal-quiz-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.animal-quiz-btn {
+    min-width: 100px;
+    padding: var(--space-md) var(--space-lg);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.animal-quiz-btn--yes {
+    background: var(--color-primary);
+    color: white;
+}
+
+.animal-quiz-btn--yes:hover {
+    background: var(--color-primary-dark);
+}
+
+.animal-quiz-btn--no {
+    background: var(--color-accent);
+    color: white;
+}
+
+.animal-quiz-btn--no:hover {
+    background: #e08600;
+}
+
+.animal-quiz-guess-emoji {
+    font-size: 80px;
+    margin-bottom: var(--space-md);
+}
+
+.animal-quiz-guess-animal {
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+.animal-quiz-feedback {
+    margin-top: var(--space-lg);
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.animal-quiz-again {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+/* ========================================
+   JOKE MACHINE
+   ======================================== */
+
+.joke-machine-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--color-secondary), #1899d6);
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    justify-content: center;
+}
+
+.joke-machine-btn:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.joke-btn-emoji {
+    font-size: 64px;
+}
+
+.joke-btn-text {
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+}
+
+.joke-display {
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.joke-setup {
+    font-size: 22px;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    line-height: 1.4;
+}
+
+.joke-reveal-btn {
+    padding: var(--space-md) var(--space-xl);
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.joke-reveal-btn:hover {
+    background: #e08600;
+    transform: scale(1.05);
+}
+
+.joke-punchline {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-top: var(--space-lg);
+    animation: joke-reveal 0.5s ease;
+}
+
+@keyframes joke-reveal {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ========================================
+   NAME MEANING
+   ======================================== */
+
+.name-input-container {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.name-input-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.name-input {
+    width: 100%;
+    max-width: 300px;
+    padding: var(--space-md);
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid var(--color-border);
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.name-input:focus {
+    border-color: var(--color-secondary);
+}
+
+.name-loading {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--color-text-secondary);
+}
+
+.loading-dots::after {
+    content: '';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+}
+
+.name-result-card {
+    background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.name-result-name {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.name-result-item {
+    margin-bottom: var(--space-sm);
+    font-size: 18px;
+}
+
+.name-result-label {
+    color: var(--color-text-secondary);
+    margin-right: var(--space-xs);
+}
+
+.name-result-value {
+    color: var(--color-text);
+    font-weight: var(--font-weight-medium);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 599px) {
+    .mini-apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-app-card {
+        min-height: 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: var(--space-md);
+    }
+
+    .mini-app-card-emoji {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+
+    .joke-machine-btn {
+        width: 160px;
+        height: 160px;
+    }
+
+    .joke-btn-emoji {
+        font-size: 48px;
+    }
+
+    .animal-quiz-buttons {
+        flex-direction: column;
+    }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .mini-app-card,
+    .mini-app-option,
+    .mini-app-generate-btn,
+    .joke-machine-btn,
+    .joke-reveal-btn {
+        transition: none;
+    }
+
+    .mini-app-card:hover,
+    .mini-app-generate-btn:hover:not(:disabled),
+    .joke-machine-btn:hover,
+    .joke-reveal-btn:hover {
+        transform: none;
+    }
+
+    .joke-punchline {
+        animation: none;
+    }
+}
