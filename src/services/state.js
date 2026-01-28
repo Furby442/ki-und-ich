@@ -23,7 +23,8 @@ export class StateManager {
             currentLesson: 0,
             completedLessons: [],
             quizScores: {},
-            lastVisited: null
+            lastVisited: null,
+            soundEnabled: true
         };
     }
 

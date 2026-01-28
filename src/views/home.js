@@ -45,11 +45,27 @@ export function HomeView(container, state) {
         `;
     }).join('');
 
+    const soundEnabled = state.get('soundEnabled') !== false;
+
     container.innerHTML = `
         <div class="container home-page">
             <header class="home-header">
-                <h1>KI und ich</h1>
-                <p class="home-welcome">Willkommen! Lerne spielerisch, was Künstliche Intelligenz ist.</p>
+                <div class="home-header-row">
+                    <h1>KI und ich</h1>
+                    <button
+                        type="button"
+                        class="sound-toggle"
+                        id="sound-toggle"
+                        aria-pressed="${soundEnabled}"
+                        aria-label="Ton"
+                        title="${soundEnabled ? 'Ton deaktivieren' : 'Ton aktivieren'}"
+                    >
+                        <span class="sound-toggle-icon" aria-hidden="true">
+                            ${soundEnabled ? '🔊' : '🔇'}
+                        </span>
+                    </button>
+                </div>
+                <p class="home-welcome">Willkommen! Lerne spielerisch, was Kuenstliche Intelligenz ist.</p>
             </header>
 
             <div class="lesson-grid">
@@ -57,6 +73,33 @@ export function HomeView(container, state) {
             </div>
         </div>
     `;
+
+    // Setup sound toggle button
+    const soundToggle = container.querySelector('#sound-toggle');
+    if (soundToggle) {
+        soundToggle.addEventListener('click', () => {
+            const isEnabled = soundToggle.getAttribute('aria-pressed') === 'true';
+            const nowMuted = isEnabled;
+
+            // Update state via soundManager
+            if (window.soundManager) {
+                window.soundManager.setMuted(nowMuted);
+            } else {
+                // Fallback: update state directly
+                state.set('soundEnabled', !nowMuted);
+            }
+
+            // Update button appearance
+            soundToggle.setAttribute('aria-pressed', !nowMuted);
+            soundToggle.setAttribute('title', nowMuted ? 'Ton aktivieren' : 'Ton deaktivieren');
+            soundToggle.querySelector('.sound-toggle-icon').textContent = nowMuted ? '🔇' : '🔊';
+
+            // Play click sound to confirm (if turning on)
+            if (!nowMuted && window.soundManager) {
+                window.soundManager.play('click');
+            }
+        });
+    }
 
     // Kiki greeting - only on first visit per session
     if (!sessionStorage.getItem('kiki_greeted') && window.kiki) {

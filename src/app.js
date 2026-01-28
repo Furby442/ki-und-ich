@@ -10,6 +10,7 @@ import { HomeView } from './views/home.js';
 import { LessonView } from './views/lesson.js';
 import { QuizView } from './views/quiz.js';
 import { kikiInstance } from './components/kiki/kiki.js';
+import { soundManager } from './services/sound.js';
 
 // Initialize state manager
 const state = new StateManager();
@@ -17,6 +18,15 @@ state.enableAutoSave();
 
 // Make state available globally for views (simple approach for Phase 1)
 window.appState = state;
+
+// Initialize sound manager with state reference
+soundManager.setStateManager(state);
+window.soundManager = soundManager;
+
+// Initialize sound on first user interaction (autoplay policy)
+document.addEventListener('click', () => {
+    soundManager.init();
+}, { once: true });
 
 // Define application routes
 const routes = {

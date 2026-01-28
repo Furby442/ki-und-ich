@@ -5,6 +5,8 @@
  * Handles answer selection, feedback, and scoring.
  */
 
+import { celebrateQuizPass, celebratePerfectScore } from '../celebration.js';
+
 /**
  * Quiz Renderer Class
  */
@@ -119,6 +121,11 @@ export class QuizRenderer {
             this.score++;
         }
 
+        // Play sound feedback
+        if (window.soundManager) {
+            window.soundManager.play(isCorrect ? 'correct' : 'incorrect');
+        }
+
         // Track answer
         this.answers.push({
             questionIndex: this.currentQuestion,
@@ -197,6 +204,21 @@ export class QuizRenderer {
 
         // Save score to state
         this.saveScore();
+
+        // Trigger celebrations for passing score
+        if (this.score >= 3) {
+            // Play completion sound
+            if (window.soundManager) {
+                window.soundManager.play('complete');
+            }
+
+            // Trigger confetti (different intensity based on score)
+            if (this.score === this.quiz.questions.length) {
+                celebratePerfectScore();  // 5/5 gets extra celebration
+            } else {
+                celebrateQuizPass();  // 3-4 gets standard celebration
+            }
+        }
 
         // Dispatch completion event
         this.dispatchCompleteEvent();
