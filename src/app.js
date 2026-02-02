@@ -56,12 +56,13 @@ function notFoundView(container, params) {
     `;
 }
 
-// Initialize router
-const router = new Router(routes);
-
-// Initialize Kiki mascot
+// Initialize Kiki mascot BEFORE Router
+// (Router triggers HomeView which checks window.kiki for greeting)
 kikiInstance.init();
 window.kiki = kikiInstance;
+
+// Initialize router
+const router = new Router(routes);
 
 // Global error handler
 window.addEventListener('error', (event) => {
