@@ -6,7 +6,7 @@
 
 import { Router } from './services/router.js';
 import { StateManager } from './services/state.js';
-import { HomeView } from './views/home.js?v=2';
+import { HomeView } from './views/home.js?v=3';
 import { LessonView } from './views/lesson.js';
 import { QuizView } from './views/quiz.js';
 import { MiniAppsView } from './views/mini-apps.js';

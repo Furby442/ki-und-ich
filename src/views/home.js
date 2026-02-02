@@ -24,6 +24,7 @@ const LESSONS = [
  * @param {object} state - Application state manager
  */
 export function HomeView(container, state) {
+    console.log('[HomeView] FUNCTION CALLED');
     // Update last visited
     state.set('lastVisited', new Date().toISOString());
 
