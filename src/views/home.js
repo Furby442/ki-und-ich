@@ -111,8 +111,15 @@ export function HomeView(container, state) {
     }
 
     // Kiki greeting - only on first visit per session
+    console.log('[HomeView] Greeting check:', {
+        kiki_greeted: sessionStorage.getItem('kiki_greeted'),
+        window_kiki: !!window.kiki,
+        condition: !sessionStorage.getItem('kiki_greeted') && window.kiki
+    });
     if (!sessionStorage.getItem('kiki_greeted') && window.kiki) {
+        console.log('[HomeView] Triggering greeting in 500ms');
         setTimeout(() => {
+            console.log('[HomeView] Showing greeting now');
             window.kiki.setEmotion('happy');
             window.kiki.speak('Hallo! Ich bin Kiki, dein Roboter-Freund. Klick auf eine Lektion, um loszulegen!');
             sessionStorage.setItem('kiki_greeted', 'true');
