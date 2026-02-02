@@ -81,8 +81,8 @@ export async function QuizView(container, state, params) {
 function setupKikiIntegration(container) {
     // Listen for quiz answer events
     container.addEventListener('quiz-answer', (e) => {
-        const { correct } = e.detail;
-        answerQuestion(correct);
+        const { isCorrect } = e.detail;
+        answerQuestion(isCorrect);
     });
 
     // Listen for quiz complete events
