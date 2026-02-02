@@ -11,15 +11,15 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 Phase: 4 of 9 (Quiz System)
 Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-01-28 — Phase 3 completed, Lesson Framework implemented
+Status: Ready to plan (Phase 2 gap closure complete)
+Last activity: 2026-02-02 — Completed 02-04-PLAN.md (gap closure)
 
 Progress: [███░░░░░░░] 33% (3/9 phases)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: ~5min
 - Total execution time: ~0.75 hours
 
@@ -28,7 +28,7 @@ Progress: [███░░░░░░░] 33% (3/9 phases)
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-setup | 3 | 16min | 5.3min |
-| 02-kiki-maskottchen-system | 3 | ~15min | ~5min |
+| 02-kiki-maskottchen-system | 4 | ~16min | ~4min |
 | 03-lesson-framework | 3 | ~15min | ~5min |
 
 *Updated after each plan completion*
@@ -47,8 +47,8 @@ Progress: [███░░░░░░░] 33% (3/9 phases)
 - **Deployment:** https://furby442.github.io/ki-und-ich/
 
 ### Phase 2: Kiki Maskottchen System ✓
-- **Completed:** 2026-01-28
-- **Plans:** 3/3
+- **Completed:** 2026-01-28 (gap closure: 2026-02-02)
+- **Plans:** 4/4 (3 original + 1 gap closure)
 - **Key artifacts:**
   - KikiAvatar SVG component with 6 emotions
   - Kiki controller with global singleton pattern
@@ -56,6 +56,10 @@ Progress: [███░░░░░░░] 33% (3/9 phases)
   - Particle effects for celebrations
   - Quiz reaction methods (reactToAnswer, reactToQuizEnd)
   - Home greeting on first session visit
+- **Gap closure (02-04):**
+  - Fixed Kiki init race condition (greeting now shows on load)
+  - Fixed CSS specificity for thoughtful emotion
+  - Verified JS emotion logic is correct
 - **Files created:**
   - src/components/kiki/kiki-avatar.js
   - src/components/kiki/kiki.js
@@ -100,6 +104,8 @@ Progress: [███░░░░░░░] 33% (3/9 phases)
 - 5 screen types: intro, explanation, example, interactive, summary (03-02)
 - 22-28px font size: Optimal for 7-year-old readers (03-03)
 - Touch swipe + keyboard navigation: Works on tablets and desktops (03-02)
+- Initialize Kiki before Router to avoid race conditions (02-04)
+- Disable CSS animations with animation: none for emotion-specific transforms (02-04)
 
 ### Technical Patterns Established
 
@@ -111,6 +117,8 @@ Progress: [███░░░░░░░] 33% (3/9 phases)
 - Global singleton: window.kiki for mascot access
 - Lesson position saved per lesson in state
 - Screen-based navigation with progress tracking
+- Initialization order: global singletons before Router (02-04)
+- Emotion CSS must disable conflicting idle animations (02-04)
 
 ### Key Files
 
@@ -138,10 +146,10 @@ None
 
 ## Session Continuity
 
-Last session: 2026-01-28
-Stopped at: Completed Phase 3 (Lesson Framework)
+Last session: 2026-02-02
+Stopped at: Completed 02-04-PLAN.md (gap closure for Phase 2)
 Resume file: None
 
 ---
 *Created: 2026-01-28*
-*Last updated: 2026-01-28*
+*Last updated: 2026-02-02*
