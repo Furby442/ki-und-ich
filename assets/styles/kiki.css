@@ -127,10 +127,12 @@
 /* Thoughtful - raised eyebrow effect, contemplative */
 .kiki-avatar[data-emotion="thoughtful"] .kiki-eye--left {
     transform: translateY(-3px) scaleY(0.85);
+    animation: none;
 }
 
 .kiki-avatar[data-emotion="thoughtful"] .kiki-eye--right {
     transform: scaleY(0.9);
+    animation: none;
 }
 
 .kiki-avatar[data-emotion="thoughtful"] .kiki-mouth {
