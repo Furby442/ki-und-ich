@@ -5,56 +5,66 @@
   "screens": [
     {
       "type": "intro",
-      "headline": "Jetzt wird geuebt!",
-      "text": "Du hast viel gelernt. Jetzt ueben wir zusammen!",
-      "image": "robot-practice",
-      "kikiEmotion": "excited",
+      "content": {
+        "headline": "Jetzt wird geuebt!",
+        "text": "Du hast viel gelernt. Jetzt ueben wir zusammen!",
+        "image": "robot-practice"
+      },
+      "kikiEmotion": "surprised",
       "kikiMessage": "Uebung macht den Meister!"
     },
     {
-      "type": "content",
-      "headline": "Uebung 1: Geschichten",
-      "text": "So fragst du nach einer Geschichte:",
-      "bullets": [
-        "Gut: 'Schreib eine kurze Geschichte ueber einen mutigen Hasen'",
-        "Noch besser: 'Schreib eine Geschichte ueber einen Hasen, der einen Schatz findet. Die Geschichte soll lustig sein.'"
-      ],
-      "highlight": "Je mehr Details, desto besser die Geschichte!",
+      "type": "explanation",
+      "content": {
+        "headline": "Uebung 1: Geschichten",
+        "text": "So fragst du nach einer Geschichte:",
+        "bullets": [
+          "Gut: 'Schreib eine kurze Geschichte ueber einen mutigen Hasen'",
+          "Noch besser: 'Schreib eine Geschichte ueber einen Hasen, der einen Schatz findet. Die Geschichte soll lustig sein.'"
+        ],
+        "highlight": "Je mehr Details, desto besser die Geschichte!"
+      },
       "kikiEmotion": "happy",
       "kikiMessage": "Probier es spaeter mal aus!"
     },
     {
-      "type": "content",
-      "headline": "Uebung 2: Erklaerungen",
-      "text": "So fragst du nach Erklaerungen:",
-      "bullets": [
-        "Gut: 'Was ist ein Regenbogen?'",
-        "Besser: 'Erklaer mir, was ein Regenbogen ist. Erklaer es so, dass ein Kind es versteht.'"
-      ],
-      "highlight": "Sag der KI, wie sie erklaeren soll!",
+      "type": "explanation",
+      "content": {
+        "headline": "Uebung 2: Erklaerungen",
+        "text": "So fragst du nach Erklaerungen:",
+        "bullets": [
+          "Gut: 'Was ist ein Regenbogen?'",
+          "Besser: 'Erklaer mir, was ein Regenbogen ist. Erklaer es so, dass ein Kind es versteht.'"
+        ],
+        "highlight": "Sag der KI, wie sie erklaeren soll!"
+      },
       "kikiEmotion": "thoughtful"
     },
     {
-      "type": "content",
-      "headline": "Uebung 3: Ideen",
-      "text": "So fragst du nach Ideen:",
-      "bullets": [
-        "Gut: 'Gib mir Spielideen'",
-        "Besser: 'Gib mir 5 Spielideen fuer draussen, die man zu zweit spielen kann'"
-      ],
-      "highlight": "Zahlen und Details helfen!",
+      "type": "explanation",
+      "content": {
+        "headline": "Uebung 3: Ideen",
+        "text": "So fragst du nach Ideen:",
+        "bullets": [
+          "Gut: 'Gib mir Spielideen'",
+          "Besser: 'Gib mir 5 Spielideen fuer draussen, die man zu zweit spielen kann'"
+        ],
+        "highlight": "Zahlen und Details helfen!"
+      },
       "kikiEmotion": "curious",
       "kikiMessage": "Mit Zahlen wird es noch genauer!"
     },
     {
       "type": "summary",
-      "headline": "Das hast du geuebt!",
-      "summaryPoints": [
-        "Geschichten mit vielen Details bestellen",
-        "Erklaerungen fuer dein Alter anfragen",
-        "Ideen mit Zahlen und Bedingungen holen"
-      ],
-      "nextStep": "Noch ein Quiz - du schaffst das!",
+      "content": {
+        "headline": "Das hast du geuebt!",
+        "summary": [
+          "Geschichten mit vielen Details bestellen",
+          "Erklaerungen fuer dein Alter anfragen",
+          "Ideen mit Zahlen und Bedingungen holen"
+        ],
+        "nextStep": "Noch ein Quiz - du schaffst das!"
+      },
       "kikiEmotion": "proud",
       "kikiMessage": "Du bist fast ein KI-Experte!"
     }

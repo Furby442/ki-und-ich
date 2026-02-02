@@ -5,59 +5,69 @@
   "screens": [
     {
       "type": "intro",
-      "headline": "KI ist ueberall!",
-      "text": "Du benutzt jeden Tag KI - ohne es zu merken! Lass uns schauen, wo.",
-      "image": "robot-everyday",
+      "content": {
+        "headline": "KI ist ueberall!",
+        "text": "Du benutzt jeden Tag KI - ohne es zu merken! Lass uns schauen, wo.",
+        "image": "robot-everyday"
+      },
       "kikiEmotion": "surprised",
       "kikiMessage": "KI versteckt sich an vielen Orten!"
     },
     {
-      "type": "content",
-      "headline": "KI auf dem Handy",
-      "text": "Dein Handy nutzt viel KI:",
-      "bullets": [
-        "Gesichtserkennung zum Entsperren",
-        "Vorschlaege beim Tippen",
-        "Filter fuer Fotos"
-      ],
-      "highlight": "Wenn dein Handy dein Gesicht erkennt, arbeitet KI!",
+      "type": "explanation",
+      "content": {
+        "headline": "KI auf dem Handy",
+        "text": "Dein Handy nutzt viel KI:",
+        "bullets": [
+          "Gesichtserkennung zum Entsperren",
+          "Vorschlaege beim Tippen",
+          "Filter fuer Fotos"
+        ],
+        "highlight": "Wenn dein Handy dein Gesicht erkennt, arbeitet KI!"
+      },
       "kikiEmotion": "happy",
       "kikiMessage": "Dein Handy ist schlauer als du denkst!"
     },
     {
-      "type": "content",
-      "headline": "KI beim Schauen",
-      "text": "Auch beim Videos schauen hilft KI:",
-      "bullets": [
-        "Netflix schlaegt dir Filme vor",
-        "YouTube zeigt passende Videos",
-        "Spotify findet Musik fuer dich"
-      ],
-      "highlight": "KI merkt sich, was dir gefaellt!",
+      "type": "explanation",
+      "content": {
+        "headline": "KI beim Schauen",
+        "text": "Auch beim Videos schauen hilft KI:",
+        "bullets": [
+          "Netflix schlaegt dir Filme vor",
+          "YouTube zeigt passende Videos",
+          "Spotify findet Musik fuer dich"
+        ],
+        "highlight": "KI merkt sich, was dir gefaellt!"
+      },
       "kikiEmotion": "curious"
     },
     {
-      "type": "content",
-      "headline": "KI zu Hause",
-      "text": "Auch zu Hause ist KI dabei:",
-      "bullets": [
-        "Saugroboter finden ihren Weg",
-        "Smarte Lampen lernen, wann du Licht brauchst",
-        "Alexa und Google hoeren dir zu"
-      ],
-      "highlight": "Ein Saugroboter nutzt KI, um nicht gegen Moebel zu fahren!",
+      "type": "explanation",
+      "content": {
+        "headline": "KI zu Hause",
+        "text": "Auch zu Hause ist KI dabei:",
+        "bullets": [
+          "Saugroboter finden ihren Weg",
+          "Smarte Lampen lernen, wann du Licht brauchst",
+          "Alexa und Google hoeren dir zu"
+        ],
+        "highlight": "Ein Saugroboter nutzt KI, um nicht gegen Moebel zu fahren!"
+      },
       "kikiEmotion": "happy",
       "kikiMessage": "Roboter zu Hause sind KI-Freunde!"
     },
     {
       "type": "summary",
-      "headline": "Das hast du gelernt!",
-      "summaryPoints": [
-        "KI entsperrt dein Handy mit deinem Gesicht",
-        "KI schlaegt dir Videos und Musik vor",
-        "KI hilft Robotern zu Hause"
-      ],
-      "nextStep": "Zeig im Quiz, was du gelernt hast!",
+      "content": {
+        "headline": "Das hast du gelernt!",
+        "summary": [
+          "KI entsperrt dein Handy mit deinem Gesicht",
+          "KI schlaegt dir Videos und Musik vor",
+          "KI hilft Robotern zu Hause"
+        ],
+        "nextStep": "Zeig im Quiz, was du gelernt hast!"
+      },
       "kikiEmotion": "proud",
       "kikiMessage": "Jetzt siehst du KI ueberall!"
     }
