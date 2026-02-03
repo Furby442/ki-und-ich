@@ -135,10 +135,10 @@ Plans:
   2. User can complete Lesson 6 practice exercises for research and prompting
   3. User understands difference between clear and vague prompts through interactive examples
   4. User can apply prompting techniques in guided practice scenarios
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 07-01: TBD
+- [x] 07-01-PLAN.md — Advanced Lessons 5-6 prompting techniques content
 
 ### Phase 8: Mini-Apps & Lesson 7
 **Goal**: Children experience creating with AI through 4 interactive mini-apps
