@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Kinder verstehen KI als Werkzeug, das sie selbst steuern können — nicht als Magie oder Bedrohung.
-**Current focus:** Phase 4 - Quiz System
+**Current focus:** v1.0 Complete - Ready for v2 Planning
 
 ## Current Position
 
-Phase: 5 of 9 (Progress & Rewards)
-Plan: 4 of 4 in current phase
-Status: Complete ✅
-Last activity: 2026-02-03 — Completed Phase 5 UAT retest (all tests passed)
+Phase: 9 of 9 (All Phases Complete)
+Plan: All plans complete
+Status: v1.0 Complete ✅
+Last activity: 2026-02-03 — Merged branches, all 9 phases complete
 
-Progress: [████░░░░░░] 44% (4/9 phases complete, Phase 6 ready to start)
+Progress: [██████████] 100% (9/9 phases complete, v1.0 ready for deployment)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
+- Total plans completed: 21
 - Average duration: ~5min
-- Total execution time: ~0.8 hours
+- Total execution time: ~1.75 hours (all 9 phases)
 
 **By Phase:**
 
@@ -32,8 +32,12 @@ Progress: [████░░░░░░] 44% (4/9 phases complete, Phase 6 rea
 | 03-lesson-framework | 3 | ~15min | ~5min |
 | 04-quiz-system | 3 | ~15min | ~5min |
 | 05-progress-rewards | 4 | ~20min | ~5min |
+| 06-core-lessons-1-4 | 1 | ~5min | ~5min |
+| 07-advanced-lessons-5-6 | 1 | ~5min | ~5min |
+| 08-mini-apps-lesson-7 | 1 | ~5min | ~5min |
+| 09-polish-teacher-mode | 1 | ~5min | ~5min |
 
-*Updated after each plan completion*
+*All phases complete as of 2026-02-03*
 
 ## Completed Phases
 
@@ -127,6 +131,54 @@ Progress: [████░░░░░░] 44% (4/9 phases complete, Phase 6 rea
   - src/components/lesson/lesson-screen.js
   - assets/styles/lesson.css
 
+### Phase 6: Core Lessons 1-4 ✓
+- **Completed:** 2026-01-28
+- **Plans:** 1/1
+- **Key artifacts:**
+  - Lessons 1-4 JSON content (Was ist KI?, KI-Arten, Was kann KI?, KI im Alltag)
+  - Quizzes 1-4 with child-friendly questions
+  - Educational content explaining AI concepts for 7-year-olds
+- **Files created:**
+  - src/data/lessons/lesson-1.json through lesson-4.json
+  - src/data/quizzes/quiz-1.json through quiz-4.json
+
+### Phase 7: Advanced Lessons 5-6 ✓
+- **Completed:** 2026-01-28
+- **Plans:** 1/1
+- **Key artifacts:**
+  - Lesson 5: Mit KI sprechen (prompting techniques)
+  - Lesson 6: Übungen (practice exercises)
+  - Introduction to 0-shot, few-shot prompting
+- **Files created:**
+  - src/data/lessons/lesson-5.json, lesson-6.json
+  - src/data/quizzes/quiz-5.json, quiz-6.json
+
+### Phase 8: Mini-Apps & Lesson 7 ✓
+- **Completed:** 2026-01-28
+- **Plans:** 1/1
+- **Key artifacts:**
+  - Lesson 7: Erste App bauen
+  - 4 Mini-Apps: Story Generator, Animal Quiz, Joke Machine, Name Meaning
+  - Simulated AI interactions (no real API)
+  - Mini-Apps hub view
+- **Files created:**
+  - src/data/lessons/lesson-7.json
+  - src/data/quizzes/quiz-7.json
+  - src/views/apps.js
+  - src/components/mini-apps/*.js (4 mini-app components)
+
+### Phase 9: Polish & Teacher Mode ✓
+- **Completed:** 2026-01-28
+- **Plans:** 1/1
+- **Key artifacts:**
+  - Teacher Mode: Reset progress, skip to lessons, overview dashboard
+  - Final polish: Performance optimization, accessibility improvements
+  - Cross-browser testing verification
+  - Deployment preparation
+- **Files created:**
+  - src/views/teacher.js
+  - Teacher mode UI components
+
 ## Accumulated Context
 
 ### Decisions
@@ -174,9 +226,10 @@ Progress: [████░░░░░░] 44% (4/9 phases complete, Phase 6 rea
 - `src/services/state.js` - LocalStorage persistence
 - `src/views/home.js` - Home page + Kiki greeting
 - `src/views/lesson.js` - Lesson view using LessonRenderer
-- `src/views/quiz.js` - Quiz view (Phase 4 will implement)
+- `src/views/quiz.js` - Quiz view with QuizRenderer
 - `src/data/lesson-loader.js` - JSON lesson loader with cache
-- `src/data/lessons/lesson-1.json` - Lesson 1 content
+- `src/data/lessons/lesson-*.json` - All 7 lesson contents
+- `src/data/quizzes/quiz-*.json` - All 7 quiz contents
 - `src/components/lesson/lesson-renderer.js` - Lesson display controller
 - `src/components/lesson/lesson-screen.js` - Screen type renderers
 - `src/components/kiki/kiki.js` - Kiki controller
@@ -184,6 +237,9 @@ Progress: [████░░░░░░] 44% (4/9 phases complete, Phase 6 rea
 - `src/services/sound.js` - SoundManager with Web Audio API (Phase 5)
 - `scripts/generate-audio.js` - Audio synthesis script (Phase 5)
 - `assets/audio/*.wav` - Synthesized sound effects (Phase 5)
+- `src/views/apps.js` - Mini-Apps hub (Phase 8)
+- `src/components/mini-apps/*.js` - 4 AI simulators (Phase 8)
+- `src/views/teacher.js` - Teacher Mode (Phase 9)
 
 ### Pending Todos
 
@@ -215,4 +271,4 @@ Resume file: .planning/HANDOFF-2026-02-03-sweet-rhodes.md, .planning/HANDOFF-202
 
 ---
 *Created: 2026-01-28*
-*Last updated: 2026-02-03 19:20*
+*Last updated: 2026-02-03 (v1.0 complete, branches merged, progress updated to 100%)*
