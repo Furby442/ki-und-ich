@@ -121,10 +121,10 @@ Plans:
   3. User can complete Lesson 3 "Was kann KI heute?" understanding current AI capabilities
   4. User can complete Lesson 4 "KI im Alltag" recognizing practical AI applications
   5. Each lesson has accompanying quiz that reinforces learning
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 06-01: TBD
+- [x] 06-01-PLAN.md — Core Lessons 1-4 content creation (JSON files)
 
 ### Phase 7: Advanced Lessons 5-6
 **Goal**: Children learn to communicate effectively with AI using prompting techniques
