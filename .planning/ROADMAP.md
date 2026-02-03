@@ -103,12 +103,13 @@ Plans:
   3. User sees confetti animation when passing quizzes
   4. User hears encouraging sound effects during interactions (with mute toggle available)
   5. User can see which lessons are complete vs. incomplete at a glance
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
 - [x] 05-01-PLAN.md — SoundManager component with Web Audio API
 - [x] 05-02-PLAN.md — Confetti integration and enhanced completion badges
 - [x] 05-03-PLAN.md — Settings UI with mute toggle and integration
+- [ ] 05-04-PLAN.md — Generate missing audio files (gap closure)
 
 ### Phase 6: Core Lessons 1-4
 **Goal**: Children understand what AI is and recognize it in daily life
@@ -181,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 | 2. Kiki Maskottchen System | 3/3 | Complete | 2026-01-28 |
 | 3. Lesson Framework | 3/3 | Complete | 2026-01-28 |
 | 4. Quiz System | 3/3 | Complete | 2026-01-28 |
-| 5. Progress & Rewards | 3/3 | Complete | 2026-01-28 |
+| 5. Progress & Rewards | 3/4 | UAT - Gap closure in progress | 2026-01-28 |
 | 6. Core Lessons 1-4 | 1/1 | Complete | 2026-01-28 |
 | 7. Advanced Lessons 5-6 | 1/1 | Complete | 2026-01-28 |
 | 8. Mini-Apps & Lesson 7 | 1/1 | Complete | 2026-01-28 |
@@ -189,4 +190,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 ---
 *Roadmap created: 2026-01-28*
-*Last updated: 2026-01-28*
+*Last updated: 2026-02-03*
