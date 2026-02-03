@@ -121,10 +121,10 @@ Plans:
   3. User can complete Lesson 3 "Was kann KI heute?" understanding current AI capabilities
   4. User can complete Lesson 4 "KI im Alltag" recognizing practical AI applications
   5. Each lesson has accompanying quiz that reinforces learning
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 06-01: TBD
+- [x] 06-01-PLAN.md — Core Lessons 1-4 content creation (JSON files)
 
 ### Phase 7: Advanced Lessons 5-6
 **Goal**: Children learn to communicate effectively with AI using prompting techniques
@@ -135,10 +135,10 @@ Plans:
   2. User can complete Lesson 6 practice exercises for research and prompting
   3. User understands difference between clear and vague prompts through interactive examples
   4. User can apply prompting techniques in guided practice scenarios
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 07-01: TBD
+- [x] 07-01-PLAN.md — Advanced Lessons 5-6 prompting techniques content
 
 ### Phase 8: Mini-Apps & Lesson 7
 **Goal**: Children experience creating with AI through 4 interactive mini-apps
@@ -151,10 +151,10 @@ Plans:
   4. User can use Joke Machine: click button to see child-friendly jokes
   5. User can use Name Meaning: enter name, receive simulated meaning explanation
   6. All mini-apps feel like "AI magic" through simulated responses (no real API)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 08-01: TBD
+- [x] 08-01-PLAN.md — Mini-Apps & Lesson 7 interactive experience
 
 ### Phase 9: Polish & Teacher Mode
 **Goal**: App is classroom-ready with teacher-friendly features and polished experience
@@ -166,10 +166,10 @@ Plans:
   3. All animations, sounds, and interactions feel polished and bug-free
   4. App has been tested on tablets (primary school device)
   5. Documentation exists for teachers explaining how to use the app in classroom
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [x] 09-01: Teacher Mode implementation (YOLO)
+- [x] 09-01-PLAN.md — Polish & Teacher Mode for classroom deployment
 
 ## Progress
 
