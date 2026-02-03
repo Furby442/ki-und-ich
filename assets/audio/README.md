@@ -2,28 +2,33 @@
 
 Sound effects for "KI & ich" learning app.
 
-## Required Files
+## Files
 
-Download free, royalty-free sounds from Pixabay:
+Generated programmatically using `scripts/generate-audio.js`:
 
-1. **correct.mp3** - Positive "ding" or chime (~0.5s)
-   - https://pixabay.com/sound-effects/search/correct/
+- **correct.wav** - Positive achievement sound (C major arpeggio)
+- **incorrect.wav** - Gentle feedback tone (descending)
+- **complete.wav** - Quiz completion celebration (major scale)
+- **click.wav** - UI interaction click (short pop)
 
-2. **incorrect.mp3** - Soft, gentle negative tone (~0.5s)
-   - https://pixabay.com/sound-effects/search/wrong/
+## Regenerating
 
-3. **complete.mp3** - Celebratory fanfare or success jingle (~1s)
-   - https://pixabay.com/sound-effects/search/success/
+Run: `node scripts/generate-audio.js`
 
-4. **click.mp3** - Soft button click or pop (~0.2s)
-   - https://pixabay.com/sound-effects/search/click/
+All sounds use simple sine wave synthesis (child-friendly, not harsh).
 
-## Requirements
+## Technical Details
 
-- MP3 format at 64kbps mono
-- Each file under 10KB for fast loading
-- Child-friendly, not harsh or scary
+- Format: 16-bit PCM WAV
+- Sample rate: 44.1 kHz
+- Channels: Mono
+- Synthesis: Pure sine waves with ADSR envelope
+- Browser support: Universal (Web Audio API decodes WAV natively)
 
-## Placeholder
+## Integration
 
-Until real sounds are added, SoundManager gracefully handles missing files.
+Loaded by `SoundManager` in `src/services/sound.js`:
+- Fetched as ArrayBuffer
+- Decoded via Web Audio API
+- Played through AudioContext destination
+- Respects user mute preference
