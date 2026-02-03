@@ -39,10 +39,10 @@ export class SoundManager {
 
             // Preload all sounds in parallel
             await Promise.all([
-                this.loadSound('correct', 'assets/audio/correct.mp3'),
-                this.loadSound('incorrect', 'assets/audio/incorrect.mp3'),
-                this.loadSound('complete', 'assets/audio/complete.mp3'),
-                this.loadSound('click', 'assets/audio/click.mp3')
+                this.loadSound('correct', 'assets/audio/correct.wav'),
+                this.loadSound('incorrect', 'assets/audio/incorrect.wav'),
+                this.loadSound('complete', 'assets/audio/complete.wav'),
+                this.loadSound('click', 'assets/audio/click.wav')
             ]);
 
             this.initialized = true;
