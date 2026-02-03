@@ -151,10 +151,10 @@ Plans:
   4. User can use Joke Machine: click button to see child-friendly jokes
   5. User can use Name Meaning: enter name, receive simulated meaning explanation
   6. All mini-apps feel like "AI magic" through simulated responses (no real API)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 08-01: TBD
+- [x] 08-01-PLAN.md — Mini-Apps & Lesson 7 interactive experience
 
 ### Phase 9: Polish & Teacher Mode
 **Goal**: App is classroom-ready with teacher-friendly features and polished experience
